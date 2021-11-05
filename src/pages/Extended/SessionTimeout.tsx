@@ -4,7 +4,7 @@ import MetaTags from "react-meta-tags";
 import SweetAlert from "react-bootstrap-sweetalert";
 import { Card, Row, Col, CardBody, CardTitle, Container } from "reactstrap";
 
-import { logoutUser } from "../../store/actions";
+import { logoutUser } from "../../store/deprecated/actions";
 
 //redux
 import { useDispatch } from "react-redux";

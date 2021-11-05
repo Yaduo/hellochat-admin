@@ -7,7 +7,7 @@ import {
   changeTopbarTheme,
   changeSidebarType,
   changeSidebarTheme,
-} from "../../store/actions";
+} from "../../store/deprecated/actions";
 
 //constants
 import {

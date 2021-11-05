@@ -8,7 +8,7 @@ import Icon from "@ailibs/feather-react-ts";
 import { Link } from "react-router-dom";
 
 // Redux Store
-import { toggleLeftmenu } from "../../store/actions";
+import { toggleLeftmenu } from "../../store/deprecated/actions";
 // reactstrap
 import { Row, Col, Dropdown, DropdownToggle, DropdownMenu } from "reactstrap";
 

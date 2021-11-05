@@ -7,7 +7,7 @@ import {
   changeTopbarTheme,
   changeLayoutWidth,
   changelayoutMode,
-} from "../../store/actions";
+} from "../../store/deprecated/actions";
 
 // Layout Related Components
 import Header from "./Header";

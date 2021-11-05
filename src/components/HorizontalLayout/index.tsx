@@ -7,7 +7,7 @@ import {
   changeLayoutWidth,
   changelayoutMode,
   changeLayoutPosition,
-} from "../../store/actions";
+} from "../../store/deprecated/actions";
 
 //redux
 import { useSelector, useDispatch } from "react-redux";

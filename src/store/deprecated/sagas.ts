@@ -1,7 +1,7 @@
 import { all, fork } from "redux-saga/effects"
 
 //Layout
-import LayoutSaga from "./layout/saga";
+import LayoutSaga from "../layout/saga";
 
 //Calendar
 // import calendarSaga from "./calendar/saga";
@@ -16,13 +16,13 @@ import LayoutSaga from "./layout/saga";
 // import contactsSaga from "./contacts/saga";
 
 //Login
-import authSaga from "./auth/login/saga";
+import authSaga from "../auth/login/saga";
 
 //Register
 // import registerSaga from "./auth/register/saga";
 
 //User Profile
-import ProfileSaga from "./auth/profile/saga";
+import ProfileSaga from "../auth/profile/saga";
 
 // Forget Password
 // import forgetPasswordSaga from "./auth/forgetpwd/saga"

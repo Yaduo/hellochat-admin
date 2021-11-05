@@ -16,7 +16,7 @@ import Breadcrumb from "../../components/Common/Breadcrumb";
 import avatar from "../../assets/images/users/concern.png";
 
 // actions
-import { editProfile, resetProfileFlag } from "../../store/actions";
+import { editProfile, resetProfileFlag } from "../../store/deprecated/actions";
 
 const UserProfile = () => {
   const dispatch = useDispatch();

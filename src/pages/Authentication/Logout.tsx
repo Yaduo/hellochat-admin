@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { withRouter } from "react-router-dom";
 
-import { logoutUser } from "../../store/actions";
+import { logoutUser } from "../../store/deprecated/actions";
 
 //redux
 import { useDispatch } from "react-redux";
