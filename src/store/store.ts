@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import { actionLog } from "./middlewares/actionLog";
 
 import Layout from "./layout/reducer";
 import { userSlice } from "./user/slice";
@@ -18,10 +19,9 @@ const rootReducer = combineReducers({
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-// const store = createStore(rootReducer, applyMiddleware(thunk, actionLog));
 const store = configureStore({
   reducer: persistedReducer,
-  middleware: (getDefaultMiddleware) => [...getDefaultMiddleware()],
+  middleware: (getDefaultMiddleware) => [...getDefaultMiddleware(), actionLog],
   devTools: true,
 });
 

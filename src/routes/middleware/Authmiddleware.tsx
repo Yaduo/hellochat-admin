@@ -1,5 +1,7 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
+import { signIn, userSlice } from "../../store/user/slice";
+import { useSelector } from "../../store/hooks";
 
 interface AuthLayoutProps {
   component: any;
@@ -21,12 +23,12 @@ const Authmiddleware = ({
 }: AuthLayoutProps) => {
   const Layout = layout;
   const Component = component;
-
+  const access_token = useSelector(s => s.user.token)
   return (
     <Route
       {...rest}
       render={props => {
-        if (isAuthProtected && !localStorage.getItem("authUser")) {
+        if (isAuthProtected && !access_token) {
           return (
             <Redirect
               to={{ pathname: "/login", state: { from: props.location } }}

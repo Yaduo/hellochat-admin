@@ -5,12 +5,14 @@ interface UserState {
   loading: boolean;
   error: string | null;
   token: string | null;
+  user: any
 }
 
 const initialState: UserState = {
   loading: false,
   error: null,
   token: null,
+  user: null
 };
 
 export const signIn = createAsyncThunk(
@@ -22,11 +24,26 @@ export const signIn = createAsyncThunk(
     },
     thunkAPI
   ) => {
-    const { data } = await axios.post(`http://123.56.149.216:8080/auth/login`, {
-      email: paramaters.email,
-      password: paramaters.password,
-    });
-    return data.token;
+    const { data } = await axios.post(
+      `https://admin-merchant.api.qa.hellochat.me/oauth/token?grant_type=password&username=admin&password=pass`,
+      null,
+      {
+        headers: {
+          Authorization: "Basic Y2xpZW50SWQ6c2VjcmV0",
+        },
+      }
+    );
+    let user = {
+      uid: 1,
+      username: "admin",
+      role: "admin",
+      password: "123456",
+      email: "admin@hellochat.com",
+    };
+    return {
+      token: data.access_token,
+      user
+    }
   }
 );
 
@@ -45,11 +62,13 @@ export const userSlice = createSlice({
       state.loading = true;
     },
     [signIn.fulfilled.type]: (state, action) => {
-      state.token = action.payload;
+      state.token = action.payload["token"];
+      state.user = action.payload["user"];
       state.loading = false;
       state.error = null;
     },
     [signIn.rejected.type]: (state, action: PayloadAction<string | null>) => {
+      console.log("rejected", action);
       state.loading = false;
       state.error = action.payload;
     },

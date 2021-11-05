@@ -11,7 +11,7 @@ import "./assets/scss/preloader.scss";
 import config from "./config";
 // Activating fake backend
 import fakeBackend from "./helpers/AuthType/fakeBackend";
-fakeBackend();
+// fakeBackend();
 
 const App = () => {
   const { layoutType } = useSelector((state: any) => ({

@@ -6,43 +6,14 @@ import {
   DropdownMenu,
   DropdownItem,
 } from "reactstrap";
-
-//i18n
 import { withTranslation } from "react-i18next";
-// Redux
 import { withRouter, Link } from "react-router-dom";
-
-// users
 import user1 from "../../../assets/images/users/concern.png";
 
-//redux
-import { useSelector } from "react-redux";
-
 const ProfileMenu = (props: any) => {
-  const { success } = useSelector((state: any) => ({
-    success: state.profile.success,
-  }));
-
   // Declare a new state variable, which we'll call "menu"
   const [menu, setMenu] = useState<boolean>(false);
-
   const [username, setusername] = useState("Admin");
-
-  useEffect(() => {
-    const getAuthUser = localStorage.getItem("authUser");
-    if (getAuthUser) {
-      if (process.env.REACT_APP_DEFAULTAUTH === "firebase") {
-        const obj = JSON.parse(getAuthUser);
-        setusername(obj.displayName);
-      } else if (
-        process.env.REACT_APP_DEFAULTAUTH === "fake" ||
-        process.env.REACT_APP_DEFAULTAUTH === "jwt"
-      ) {
-        const obj = JSON.parse(getAuthUser);
-        setusername(obj.username);
-      }
-    }
-  }, [success]);
 
   return (
     <React.Fragment>

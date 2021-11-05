@@ -1,37 +1,41 @@
 import MetaTags from "react-meta-tags";
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Alert, Container } from "reactstrap";
 import { withRouter, Link } from "react-router-dom";
 import { AvForm, AvField } from "availity-reactstrap-validation";
 import logo from "../../assets/images/logo-sm.svg";
 import CarouselPage from "../AuthenticationInner/CarouselPage";
-
-import { signIn } from "../../store/user/slice";
+import { signIn, userSlice } from "../../store/user/slice";
 import { useDispatch } from "react-redux";
 import { useSelector } from "../../store/hooks";
+import { useHistory } from "react-router-dom";
 
-interface LoginProps {
-  history: object;
-}
+// interface LoginProps {
+//   history: object;
+// }
 
-const Login = ({ history }: LoginProps) => {
-
-  const loading = useSelector(s => s.user.loading)
-  const jwt = useSelector(s => s.user.token)
-  const error = useSelector(s => s.user.error)
+const Login = () => {
+  const loading = useSelector((s) => s.user.loading);
+  const access_token = useSelector((s) => s.user.token);
+  const error = useSelector((s) => s.user.error);
   const dispatch = useDispatch();
+  const history = useHistory();
 
   // handleValidSubmit
   const handleValidSubmit = (event: any, values: any) => {
-    console.log("handleValidSubmit +++++++++ ")
-    console.log("values ", values)
-    console.log("history ", history)
-    // dispatch(loginUser(values, history));
-    dispatch(signIn({
-      email: values.email,
-      password: values.password
-    }))
+    dispatch(
+      signIn({
+        email: values.email,
+        password: values.password,
+      })
+    );
   };
+
+  useEffect(() => {
+    if (access_token !== null) {
+      history.push("/dashboard");
+    }
+  }, [access_token]);
 
   return (
     <React.Fragment>
@@ -130,7 +134,6 @@ const Login = ({ history }: LoginProps) => {
                           </button>
                         </div>
                       </AvForm>
-
                     </div>
                     <div className="mt-4 mt-md-5 text-center">
                       <p className="mb-0">
