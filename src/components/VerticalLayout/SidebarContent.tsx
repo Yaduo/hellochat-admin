@@ -103,7 +103,7 @@ const SidebarContent = () => {
             <li className="menu-title">{i18n.t("Managment")}</li>
             <li>
               <Link to="/#" className="has-arrow ">
-                <i className="mdi mdi-account-group"></i>
+                <i className="mdi mdi-account-group-outline"></i>
                 <span>{i18n.t("Users")}</span>
               </Link>
               <ul className="sub-menu">
@@ -117,22 +117,28 @@ const SidebarContent = () => {
             </li>
             <li>
               <Link to="/service-toggles">
-                <i className="mdi mdi-rocket-launch"></i>
+                <i className="mdi mdi-clipboard-text-play-outline"></i>
                 <span>{i18n.t("Service Toggles")}</span>
               </Link>
             </li>
             <li>
               <Link to="/dynamic-contents">
-                <i className="mdi mdi-post"></i>
+                <i className="mdi mdi-clipboard-edit-outline"></i>
                 <span>{i18n.t("Dynamic Contents")}</span>
               </Link>
             </li>
-
+            <li>
+              <Link to="/system-notifications">
+                <i className="mdi mdi-chat-alert-outline"></i>
+                <span>{i18n.t("System Notifications")}</span>
+              </Link>
+            </li>
             
+
             <li className="menu-title">{i18n.t("HelloChat Pay")}</li>
             <li>
               <Link to="/#" className="has-arrow ">
-                <i className="mdi mdi-rocket-launch"></i>
+                <i className="mdi mdi-cash-usd-outline"></i>
                 <span>{i18n.t("Wallets")}</span>
               </Link>
               <ul className="sub-menu">
@@ -150,13 +156,13 @@ const SidebarContent = () => {
 
             <li>
               <Link to="/parteners">
-                <i className="mdi mdi-account"></i>
+                <i className="mdi mdi-contacts-outline"></i>
                 <span>{i18n.t("Parteners")}</span>
               </Link>
             </li>
             <li>
               <Link to="/merchants">
-                <i className="mdi mdi-rocket-launch"></i>
+                <i className="mdi mdi-storefront-outline"></i>
                 <span>{i18n.t("Merchant List")}</span>
               </Link>
             </li>
@@ -164,13 +170,13 @@ const SidebarContent = () => {
             <li className="menu-title">{i18n.t("E-Commerce")}</li>
             <li>
               <Link to="/products">
-                <i className="mdi mdi-rocket-launch"></i>
+                <i className="mdi mdi-bookmark-multiple-outline"></i>
                 <span>{i18n.t("Products")}</span>
               </Link>
             </li>
             <li>
               <Link to="/purchase-orders">
-                <i className="mdi mdi-rocket-launch"></i>
+                <i className="mdi mdi-cart-check"></i>
                 <span>{i18n.t("Purchase Orders")}</span>
               </Link>
             </li>

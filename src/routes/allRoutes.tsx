@@ -1,57 +1,44 @@
 import { Redirect } from "react-router-dom";
 //Dashboard
 import Dashboard from "../pages/Dashboard";
-
+//Authentication pages
+import Login from "src/pages/Authentication/Login";
+import Logout from "src/pages/Authentication/Logout";
+import Register from "src/pages/Authentication/Register";
+import userProfile from "src/pages/Authentication/user-profile";
+import PagesComingsoon from "src/pages/Dev/Utility/PageComingsoon";
 // Management
 import HelloChatUserList from "../pages/Users/HelloChatUserList";
 import StaffList from "../pages/Staffs/StaffList";
 import ServiceTogglesList from "../pages/ServiceToggles/ServiceTogglesList";
 import DynamicContentList from "../pages/DynamicContents/DynamicContentList"
-
+import SystemNotificationList from "../pages/SystemNotifications/SystemNotificationList"
 // Wallets
 import WalletList from "../pages/Wallets/WalletList";
 import PaymentOrderList from "../pages/PaymentOrders/PaymentOrderList";
 import TransactionList from "../pages/Transactions/TransactionList";
-
 // Parteners
 import PartenerList from "../pages/Parteners/PartenerList";
 import MerchantList from "../pages/Merchants/MerchantList"
-
 // e-com
 import ProductList from "../pages/Products/ProductList"
 import PurchaseOrderList from "../pages/PurchaseOrders/PurchaseOrderList"
 
-
-
-
-
-
-
-
-
-
-
 // ----------------- Dev Routes ---------------------
-
 //Calendar
 import Calendar from "src/pages/Dev/Calendar";
-
 //Chat
 import Chat from "src/pages/Dev/Chat/Chat";
-
 //Email Inbox
 import Inbox from "src/pages/Dev/Email/Inbox";
 import EmailRead from "src/pages/Dev/Email/email-read";
-
 //Invoice
 import InvoiceList from "src/pages/Dev/Invoices/invoice-list";
 import InvoiceDetails from "src/pages/Dev/Invoices/invoice-details";
-
 //Contacts
 import ContactsGrid from "src/pages/Dev/Contacts/contactsGrid";
 import ContactsList from "src/pages/Dev/Contacts/ContactList/contacts-list";
 import ContactsProfile from "src/pages/Dev/Contacts/ContactsProfile/contacts-profile";
-
 //Utility
 import PageStarter from "src/pages/Dev/Utility/PageStarter";
 import PageMaintenance from "src/pages/Dev/Utility/PageMaintenance";
@@ -60,7 +47,6 @@ import PageFaqs from "src/pages/Dev/Utility/PageFAQs";
 import PagePricing from "src/pages/Dev/Utility/PagePricing";
 import Error404 from "src/pages/Dev/Utility/Error404";
 import Error500 from "src/pages/Dev/Utility/Error500";
-
 //UI Components
 import UiAlert from "src/pages/Dev/UiComponents/UiAlert";
 import UiButton from "src/pages/Dev/UiComponents/UiButton";
@@ -77,7 +63,6 @@ import UiTypography from "src/pages/Dev/Utility/UiTypography";
 import UiVideo from "src/pages/Dev/Utility/UiVideo";
 import UiGeneral from "src/pages/Dev/UiComponents/UiGeneral";
 import UiColors from "src/pages/Dev/UiComponents/UiColors";
-
 //Extended pages
 import UiLightbox from "src/pages/Dev/Extended/Lightbox";
 import RangeSlider from "src/pages/Dev/Extended/Rangeslider";
@@ -85,7 +70,6 @@ import UiSweetAlert from "src/pages/Dev/Extended/SweetAlert";
 import SessionTimeout from "src/pages/Dev/Extended/SessionTimeout";
 import UiRating from "src/pages/Dev/Extended/UiRating";
 import Notifications from "src/pages/Dev/Extended/Notifications";
-
 //Forms pages
 import FormElements from "src/pages/Dev/Forms/FormElements";
 import FormValidation from "src/pages/Dev/Forms/FormValidation";
@@ -94,25 +78,21 @@ import FormEditors from "src/pages/Dev/Forms/FormEditors";
 import FormUpload from "src/pages/Dev/Forms/FormUpload";
 import FormWizard from "src/pages/Dev/Forms/FormWizard";
 import FormMask from "src/pages/Dev/Forms/FormMask";
-
 //Tables
 import BasicTable from "src/pages/Dev/Tables/BasicTables";
 import DatatableTables from "src/pages/Dev/Tables/DatatableTables";
 import ResponsiveTables from "src/pages/Dev/Tables/ResponsiveTables";
 import EditableTables from "src/pages/Dev/Tables/EditableTables";
-
 //Charts
 import Apexchart from "src/pages/Dev/Charts/Apexcharts";
 import EChart from "src/pages/Dev/Charts/EChart";
 import ChartjsChart from "src/pages/Dev/Charts/ChartjsChart";
 import SparklineChart from "src/pages/Dev/Charts/SparklineChart";
-
 //Icons
 import IconBoxicons from "../pages/Dev/Icons/IconBoxicons";
 import IconMaterialdesign from "../pages/Dev/Icons/IconMaterialdesign";
 import IconDripicons from "../pages/Dev/Icons/IconDripicons";
 import IconFontawesome from "../pages/Dev/Icons/IconFontawesome";
-
 //AuthenticationInner pages
 import PageLogin from "src/pages/Dev/AuthenticationInner/PageLogin";
 import PageRegister from "src/pages/Dev/AuthenticationInner/PageRegister";
@@ -121,13 +101,6 @@ import LockScreen from "src/pages/Dev/AuthenticationInner/LockScreen";
 import ConfirmMail from "src/pages/Dev/AuthenticationInner/ConfirmMail";
 import EmailVerification from "src/pages/Dev/AuthenticationInner/EmailVerification";
 import TwoStepVerfication from "src/pages/Dev/AuthenticationInner/TwoStepVerfication";
-
-//Authentication pages
-import Login from "src/pages/Authentication/Login";
-import Logout from "src/pages/Authentication/Logout";
-import Register from "src/pages/Authentication/Register";
-import userProfile from "src/pages/Authentication/user-profile";
-import PagesComingsoon from "src/pages/Dev/Utility/PageComingsoon";
 
 //Maps
 import MapsGoogle from "src/pages/Dev/Maps/MapsGoogle";
@@ -152,6 +125,7 @@ const userRoutes: Array<RouteProps> = [
   { path: "/staffs", component: StaffList },
   { path: "/service-toggles", component: ServiceTogglesList },
   { path: "/dynamic-contents", component: DynamicContentList },
+  { path: "/system-notifications", component: SystemNotificationList },
 
   // Wallets
   { path: "/wallets", component: WalletList },
