@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, Card, CardBody } from "reactstrap";
 
 //Import Image
-import avatar2 from "../../assets/images/users/concern.png";
-import img3 from "../../assets/images/small/img-3.jpg";
-import img4 from "../../assets/images/small/img-4.jpg";
+import avatar2 from "../../../assets/images/users/concern.png";
+import img3 from "../../../assets/images/small/img-3.jpg";
+import img4 from "../../../assets/images/small/img-4.jpg";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 //Import Email Sidebar
 import EmailSideBar from "./email-sidebar";

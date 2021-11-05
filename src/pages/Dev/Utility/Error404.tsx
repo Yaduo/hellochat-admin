@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
-import error from "../../assets/images/error-img.png";
+import error from "../../../assets/images/error-img.png";
 
 const Error404 = () => {
   return (

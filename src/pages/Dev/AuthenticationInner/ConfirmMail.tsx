@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 
 //import images
-import logo from "../../assets/images/logo-sm.svg";
+import logo from "../../../assets/images/logo-sm.svg";
 import CarouselPage from "./CarouselPage";
 
 const ConfirmMail = () => {

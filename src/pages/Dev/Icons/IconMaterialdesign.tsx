@@ -4,7 +4,7 @@ import MetaTags from "react-meta-tags";
 import { Container, Row, Col, Card, CardBody, CardHeader } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 const IconMaterialdesign = () => {
   useEffect(() => {

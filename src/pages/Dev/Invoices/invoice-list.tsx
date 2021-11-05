@@ -16,7 +16,7 @@ import {
 } from "reactstrap";
 
 // import { getInvoices as onGetInvoices } from "../../store/actions";
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 import paginationFactory, {
   PaginationListStandalone,

@@ -15,7 +15,7 @@ import {
 import { AvForm, AvField } from "availity-reactstrap-validation";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../../components/Common/Breadcrumb";
 import NormalValidation from "./NormalValidation";
 import TooltipsValidation from "./TooltipsValidation";
 

@@ -20,7 +20,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 const UiDropdowns = () => {
   const [btnprimary1, setBtnprimary1] = useState(false);

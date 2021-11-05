@@ -18,9 +18,9 @@ import {
 import { Link } from "react-router-dom";
 
 //import images
-import avatar from "../../../assets/images/users/dizzy.png";
-import avatar1 from "../../../assets/images/users/dizzy.png";
-import avatar3 from "../../../assets/images/users/dizzy.png";
+import avatar from "../../../../assets/images/users/dizzy.png";
+import avatar1 from "../../../../assets/images/users/dizzy.png";
+import avatar3 from "../../../../assets/images/users/dizzy.png";
 
 import classnames from "classnames";
 import ProfileTab1 from "./ProfileTab1";

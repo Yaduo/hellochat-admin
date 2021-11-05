@@ -3,105 +3,105 @@ import { Redirect } from "react-router-dom";
 import Dashboard from "../pages/Dashboard";
 
 //Calendar
-import Calendar from "src/pages/Calendar";
+import Calendar from "src/pages/Dev/Calendar";
 
 //Chat
-import Chat from "src/pages/Chat/Chat";
+import Chat from "src/pages/Dev/Chat/Chat";
 
 //Email Inbox
-import Inbox from "src/pages/Email/Inbox";
-import EmailRead from "src/pages/Email/email-read";
+import Inbox from "src/pages/Dev/Email/Inbox";
+import EmailRead from "src/pages/Dev/Email/email-read";
 
 //Invoice
-import InvoiceList from "src/pages/Invoices/invoice-list";
-import InvoiceDetails from "src/pages/Invoices/invoice-details";
+import InvoiceList from "src/pages/Dev/Invoices/invoice-list";
+import InvoiceDetails from "src/pages/Dev/Invoices/invoice-details";
 
 //Contacts
-import ContactsGrid from "src/pages/Contacts/contactsGrid";
-import ContactsList from "src/pages/Contacts/ContactList/contacts-list";
-import ContactsProfile from "src/pages/Contacts/ContactsProfile/contacts-profile";
+import ContactsGrid from "src/pages/Dev/Contacts/contactsGrid";
+import ContactsList from "src/pages/Dev/Contacts/ContactList/contacts-list";
+import ContactsProfile from "src/pages/Dev/Contacts/ContactsProfile/contacts-profile";
 
 //Utility
-import PageStarter from "src/pages/Utility/PageStarter";
-import PageMaintenance from "src/pages/Utility/PageMaintenance";
-import PageTimeline from "src/pages/Utility/PageTimeline";
-import PageFaqs from "src/pages/Utility/PageFAQs";
-import PagePricing from "src/pages/Utility/PagePricing";
-import Error404 from "src/pages/Utility/Error404";
-import Error500 from "src/pages/Utility/Error500";
+import PageStarter from "src/pages/Dev/Utility/PageStarter";
+import PageMaintenance from "src/pages/Dev/Utility/PageMaintenance";
+import PageTimeline from "src/pages/Dev/Utility/PageTimeline";
+import PageFaqs from "src/pages/Dev/Utility/PageFAQs";
+import PagePricing from "src/pages/Dev/Utility/PagePricing";
+import Error404 from "src/pages/Dev/Utility/Error404";
+import Error500 from "src/pages/Dev/Utility/Error500";
 
 //UI Components
-import UiAlert from "src/pages/UiComponents/UiAlert";
-import UiButton from "src/pages/UiComponents/UiButton";
-import UiCard from "src/pages/UiComponents/UiCard";
-import UiCarousel from "src/pages/UiComponents/UiCarousel";
-import UiDropdowns from "src/pages/UiComponents/UiDropdowns";
-import UiGrid from "src/pages/UiComponents/UiGird";
-import UiModal from "src/pages/UiComponents/UiModals";
-import UiImages from "src/pages/UiComponents/UiImages";
-import UiDrawer from "src/pages/UiComponents/UiDrawer";
-import UiProgressbar from "src/pages/UiComponents/UiProgressbar";
-import UiTabsAccordions from "src/pages/Utility/UiTabsAccordions";
-import UiTypography from "src/pages/Utility/UiTypography";
-import UiVideo from "src/pages/Utility/UiVideo";
-import UiGeneral from "src/pages/UiComponents/UiGeneral";
-import UiColors from "src/pages/UiComponents/UiColors";
+import UiAlert from "src/pages/Dev/UiComponents/UiAlert";
+import UiButton from "src/pages/Dev/UiComponents/UiButton";
+import UiCard from "src/pages/Dev/UiComponents/UiCard";
+import UiCarousel from "src/pages/Dev/UiComponents/UiCarousel";
+import UiDropdowns from "src/pages/Dev/UiComponents/UiDropdowns";
+import UiGrid from "src/pages/Dev/UiComponents/UiGird";
+import UiModal from "src/pages/Dev/UiComponents/UiModals";
+import UiImages from "src/pages/Dev/UiComponents/UiImages";
+import UiDrawer from "src/pages/Dev/UiComponents/UiDrawer";
+import UiProgressbar from "src/pages/Dev/UiComponents/UiProgressbar";
+import UiTabsAccordions from "src/pages/Dev/Utility/UiTabsAccordions";
+import UiTypography from "src/pages/Dev/Utility/UiTypography";
+import UiVideo from "src/pages/Dev/Utility/UiVideo";
+import UiGeneral from "src/pages/Dev/UiComponents/UiGeneral";
+import UiColors from "src/pages/Dev/UiComponents/UiColors";
 
 //Extended pages
-import UiLightbox from "src/pages/Extended/Lightbox";
-import RangeSlider from "src/pages/Extended/Rangeslider";
-import UiSweetAlert from "src/pages/Extended/SweetAlert";
-import SessionTimeout from "src/pages/Extended/SessionTimeout";
-import UiRating from "src/pages/Extended/UiRating";
-import Notifications from "src/pages/Extended/Notifications";
+import UiLightbox from "src/pages/Dev/Extended/Lightbox";
+import RangeSlider from "src/pages/Dev/Extended/Rangeslider";
+import UiSweetAlert from "src/pages/Dev/Extended/SweetAlert";
+import SessionTimeout from "src/pages/Dev/Extended/SessionTimeout";
+import UiRating from "src/pages/Dev/Extended/UiRating";
+import Notifications from "src/pages/Dev/Extended/Notifications";
 
 //Forms pages
-import FormElements from "src/pages/Forms/FormElements";
-import FormValidation from "src/pages/Forms/FormValidation";
-import AdvancedPlugins from "src/pages/Forms/AdvancedPlugins";
-import FormEditors from "src/pages/Forms/FormEditors";
-import FormUpload from "src/pages/Forms/FormUpload";
-import FormWizard from "src/pages/Forms/FormWizard";
-import FormMask from "src/pages/Forms/FormMask";
+import FormElements from "src/pages/Dev/Forms/FormElements";
+import FormValidation from "src/pages/Dev/Forms/FormValidation";
+import AdvancedPlugins from "src/pages/Dev/Forms/AdvancedPlugins";
+import FormEditors from "src/pages/Dev/Forms/FormEditors";
+import FormUpload from "src/pages/Dev/Forms/FormUpload";
+import FormWizard from "src/pages/Dev/Forms/FormWizard";
+import FormMask from "src/pages/Dev/Forms/FormMask";
 
 //Tables
-import BasicTable from "src/pages/Tables/BasicTables";
-import DatatableTables from "src/pages/Tables/DatatableTables";
-import ResponsiveTables from "src/pages/Tables/ResponsiveTables";
-import EditableTables from "src/pages/Tables/EditableTables";
+import BasicTable from "src/pages/Dev/Tables/BasicTables";
+import DatatableTables from "src/pages/Dev/Tables/DatatableTables";
+import ResponsiveTables from "src/pages/Dev/Tables/ResponsiveTables";
+import EditableTables from "src/pages/Dev/Tables/EditableTables";
 
 //Charts
-import Apexchart from "src/pages/Charts/Apexcharts";
-import EChart from "src/pages/Charts/EChart";
-import ChartjsChart from "src/pages/Charts/ChartjsChart";
-import SparklineChart from "src/pages/Charts/SparklineChart";
+import Apexchart from "src/pages/Dev/Charts/Apexcharts";
+import EChart from "src/pages/Dev/Charts/EChart";
+import ChartjsChart from "src/pages/Dev/Charts/ChartjsChart";
+import SparklineChart from "src/pages/Dev/Charts/SparklineChart";
 
 //Icons
-import IconBoxicons from "../pages/Icons/IconBoxicons";
-import IconMaterialdesign from "../pages/Icons/IconMaterialdesign";
-import IconDripicons from "../pages/Icons/IconDripicons";
-import IconFontawesome from "../pages/Icons/IconFontawesome";
+import IconBoxicons from "../pages/Dev/Icons/IconBoxicons";
+import IconMaterialdesign from "../pages/Dev/Icons/IconMaterialdesign";
+import IconDripicons from "../pages/Dev/Icons/IconDripicons";
+import IconFontawesome from "../pages/Dev/Icons/IconFontawesome";
 
 //AuthenticationInner pages
-import PageLogin from "src/pages/AuthenticationInner/PageLogin";
-import PageRegister from "src/pages/AuthenticationInner/PageRegister";
-import RecoverPassword from "src/pages/AuthenticationInner/RecoverPassword";
-import LockScreen from "src/pages/AuthenticationInner/LockScreen";
-import ConfirmMail from "src/pages/AuthenticationInner/ConfirmMail";
-import EmailVerification from "src/pages/AuthenticationInner/EmailVerification";
-import TwoStepVerfication from "src/pages/AuthenticationInner/TwoStepVerfication";
+import PageLogin from "src/pages/Dev/AuthenticationInner/PageLogin";
+import PageRegister from "src/pages/Dev/AuthenticationInner/PageRegister";
+import RecoverPassword from "src/pages/Dev/AuthenticationInner/RecoverPassword";
+import LockScreen from "src/pages/Dev/AuthenticationInner/LockScreen";
+import ConfirmMail from "src/pages/Dev/AuthenticationInner/ConfirmMail";
+import EmailVerification from "src/pages/Dev/AuthenticationInner/EmailVerification";
+import TwoStepVerfication from "src/pages/Dev/AuthenticationInner/TwoStepVerfication";
 
 //Authentication pages
 import Login from "src/pages/Authentication/Login";
 import Logout from "src/pages/Authentication/Logout";
 import Register from "src/pages/Authentication/Register";
 import userProfile from "src/pages/Authentication/user-profile";
-import PagesComingsoon from "src/pages/Utility/PageComingsoon";
+import PagesComingsoon from "src/pages/Dev/Utility/PageComingsoon";
 
 //Maps
-import MapsGoogle from "src/pages/Maps/MapsGoogle";
-import MapsVector from "src/pages/Maps/MapsVector";
-import MapsLeaflet from "src/pages/Maps/MapsLeaflet";
+import MapsGoogle from "src/pages/Dev/Maps/MapsGoogle";
+import MapsVector from "src/pages/Dev/Maps/MapsVector";
+import MapsLeaflet from "src/pages/Dev/Maps/MapsLeaflet";
 
 interface RouteProps {
   path: string;

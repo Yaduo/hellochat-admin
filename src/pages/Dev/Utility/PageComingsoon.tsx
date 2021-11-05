@@ -6,11 +6,11 @@ import Slider from "react-slick";
 import Countdown from "react-countdown";
 
 //import images
-import bg1 from "../../assets/images/bg-1.jpg";
-import bg2 from "../../assets/images/bg-2.jpg";
-import bg3 from "../../assets/images/bg-3.jpg";
+import bg1 from "../../../assets/images/bg-1.jpg";
+import bg2 from "../../../assets/images/bg-2.jpg";
+import bg3 from "../../../assets/images/bg-3.jpg";
 // import images
-import logo from "../../assets/images/logo-sm.svg";
+import logo from "../../../assets/images/logo-sm.svg";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 

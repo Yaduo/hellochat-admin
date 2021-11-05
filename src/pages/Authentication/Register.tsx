@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 // import images
 import logo from "../../assets/images/logo-sm.svg";
-import CarouselPage from "../AuthenticationInner/CarouselPage";
+import CarouselPage from "../Dev/AuthenticationInner/CarouselPage";
 
 const Register = () => {
   const dispatch = useDispatch();

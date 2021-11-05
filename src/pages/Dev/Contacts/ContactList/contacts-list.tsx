@@ -27,10 +27,10 @@ import { AvForm, AvField } from "availity-reactstrap-validation";
 import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
 import BootstrapTable from "react-bootstrap-table-next";
 
-import * as images from "../../../assets/images";
+import * as images from "../../../../assets/images";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../../components/Common/Breadcrumb";
 
 // import {
 //   getUsers as onGetUsers,

@@ -11,7 +11,7 @@ import {
   CardHeader,
 } from "reactstrap";
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 // import chartJs
 import LineCharts from "../AllCharts/chartjs/linechart";

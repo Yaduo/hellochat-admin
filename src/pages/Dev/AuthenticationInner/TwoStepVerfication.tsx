@@ -7,7 +7,7 @@ import MetaTags from "react-meta-tags";
 import AuthCode from "react-auth-code-input";
 
 //import images
-import logo from "../../assets/images/logo-sm.svg";
+import logo from "../../../assets/images/logo-sm.svg";
 import CarouselPage from "./CarouselPage";
 
 const TwoStepVerfication = () => {

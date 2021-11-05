@@ -4,7 +4,7 @@ import { Row, Col, Alert, Container } from "reactstrap";
 import { withRouter, Link } from "react-router-dom";
 import { AvForm, AvField } from "availity-reactstrap-validation";
 import logo from "../../assets/images/logo-sm.svg";
-import CarouselPage from "../AuthenticationInner/CarouselPage";
+import CarouselPage from "../Dev/AuthenticationInner/CarouselPage";
 import { signIn, userSlice } from "../../store/user/slice";
 import { useDispatch } from "react-redux";
 import { useSelector } from "../../store/hooks";

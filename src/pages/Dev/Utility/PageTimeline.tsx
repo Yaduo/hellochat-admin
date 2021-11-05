@@ -11,11 +11,11 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 import { Link } from "react-router-dom";
 
-import img1 from "../../assets/images/small/img-2.jpg";
-import img2 from "../../assets/images/small/img-5.jpg";
+import img1 from "../../../assets/images/small/img-2.jpg";
+import img2 from "../../../assets/images/small/img-5.jpg";
 
 const PageTimeline = () => {
   return (

@@ -3,16 +3,16 @@ import MetaTags from "react-meta-tags";
 import { Card, CardBody, CardHeader, Col, Container, Row } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 //imoprt images
-import img4 from "../../assets/images/small/img-4.jpg";
-import img3 from "../../assets/images/small/img-3.jpg";
-import img2 from "../../assets/images/small/img-2.jpg";
-import avtar4 from "../../assets/images/users/concern.png";
-import avtar3 from "../../assets/images/users/concern.png";
-import avtar5 from "../../assets/images/users/concern.png";
-import avtar1 from "../../assets/images/users/concern.png";
+import img4 from "../../../assets/images/small/img-4.jpg";
+import img3 from "../../../assets/images/small/img-3.jpg";
+import img2 from "../../../assets/images/small/img-2.jpg";
+import avtar4 from "../../../assets/images/users/concern.png";
+import avtar3 from "../../../assets/images/users/concern.png";
+import avtar5 from "../../../assets/images/users/concern.png";
+import avtar1 from "../../../assets/images/users/concern.png";
 
 const UiImages = () => {
   return (

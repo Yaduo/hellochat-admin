@@ -14,7 +14,7 @@ import {
 import { map } from "lodash";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 //Import Card
 import CardContact from "./cardContact";

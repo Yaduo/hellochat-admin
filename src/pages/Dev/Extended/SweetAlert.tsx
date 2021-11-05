@@ -6,7 +6,7 @@ import MetaTags from "react-meta-tags";
 import SweetAlert from "react-bootstrap-sweetalert";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 const UiSweetAlert = () => {
   const [basic, setbasic] = useState(false);

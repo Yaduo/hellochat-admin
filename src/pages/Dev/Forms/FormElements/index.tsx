@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Card, CardBody, CardHeader, Col, Container, Row } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../../components/Common/Breadcrumb";
 
 //import Components
 import Checkboxes from "./Checkboxes";

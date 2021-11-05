@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Container, Row } from "reactstrap";
 
 //import images
-import error from "../../assets/images/error-img.png";
+import error from "../../../assets/images/error-img.png";
 
 const Error500 = () => {
   return (

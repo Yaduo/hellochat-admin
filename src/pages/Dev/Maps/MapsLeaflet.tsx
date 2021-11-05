@@ -12,7 +12,7 @@ import LayerGroup from "./LeafletMap/LayerGroup";
 import MapLayerControl from "./LeafletMap/MapLayerControl";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 const MapsLeaflet = () => {
   return (

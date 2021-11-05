@@ -14,9 +14,9 @@ import {
 } from "reactstrap";
 
 //import images
-import img1 from "../../../assets/images/small/img-3.jpg";
-import img2 from "../../../assets/images/small/img-1.jpg";
-import img3 from "../../../assets/images/small/img-5.jpg";
+import img1 from "../../../../assets/images/small/img-3.jpg";
+import img2 from "../../../../assets/images/small/img-1.jpg";
+import img3 from "../../../../assets/images/small/img-5.jpg";
 
 const ProfileTab1 = () => {
   return (

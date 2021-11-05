@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, Button, Input, Label, Card } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 //Import Email Sidebar
 import EmailSideBar from "./email-sidebar";

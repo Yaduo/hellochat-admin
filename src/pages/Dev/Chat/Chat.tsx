@@ -32,8 +32,8 @@ import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
-import * as images from "../../assets/images/index";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import * as images from "../../../assets/images/index";
 // import {
 //   addMessage as onAddMessage,
 //   getChats as onGetChats,

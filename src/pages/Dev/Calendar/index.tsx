@@ -22,10 +22,10 @@ import interactionPlugin, { Draggable } from "@fullcalendar/interaction";
 import BootstrapTheme from "@fullcalendar/bootstrap";
 
 //import images
-import calendar from "../../assets/images/undraw-calendar.svg";
+import calendar from "../../../assets/images/undraw-calendar.svg";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 // import {
 //   addNewEvent as onAddNewEvent,

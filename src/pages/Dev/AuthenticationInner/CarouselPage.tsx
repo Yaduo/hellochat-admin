@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Carousel, CarouselItem, CarouselIndicators } from "reactstrap";
 
-import img1 from "../../assets/images/users/concern.png";
-import img2 from "../../assets/images/users/cry.png";
-import img3 from "../../assets/images/users/dizzy.png";
+import img1 from "../../../assets/images/users/concern.png";
+import img2 from "../../../assets/images/users/cry.png";
+import img3 from "../../../assets/images/users/dizzy.png";
 
 const items = [
   {

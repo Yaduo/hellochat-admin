@@ -6,7 +6,7 @@ import { Container, Row } from "reactstrap";
 import ProfileTab from "./ProfileTab";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../../components/Common/Breadcrumb";
 
 const ContactsProfile = () => {
   return (

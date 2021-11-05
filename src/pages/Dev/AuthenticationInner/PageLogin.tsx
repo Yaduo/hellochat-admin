@@ -2,7 +2,7 @@ import React from "react";
 import MetaTags from "react-meta-tags";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/images/logo-sm.svg";
+import logo from "../../../assets/images/logo-sm.svg";
 import CarouselPage from "./CarouselPage";
 
 const PageLogin = () => {

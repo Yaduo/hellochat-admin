@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MetaTags from "react-meta-tags";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 import { Row, Col, Card, CardBody, Container } from "reactstrap";
 
 // Rating Plugin

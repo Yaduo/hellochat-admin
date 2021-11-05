@@ -4,13 +4,13 @@ import MetaTags from "react-meta-tags";
 import SweetAlert from "react-bootstrap-sweetalert";
 import { Card, Row, Col, CardBody, CardTitle, Container } from "reactstrap";
 
-import { logoutUser } from "../../store/deprecated/actions";
+import { logoutUser } from "../../../store/deprecated/actions";
 
 //redux
 import { useDispatch } from "react-redux";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 interface SessionTimeoutProps {
   history: any;

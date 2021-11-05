@@ -11,7 +11,7 @@ import {
 import MetaTags from "react-meta-tags";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 // Charts
 import Gauge from "../AllCharts/echart/gaugechart";

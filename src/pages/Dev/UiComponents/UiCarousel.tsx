@@ -19,7 +19,7 @@ import Slidewithcaption from "./CarouselTypes/slidewithcaption";
 import Slidewithfade from "./CarouselTypes/slidewithfade";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 const UiCarousel = () => {
   return (

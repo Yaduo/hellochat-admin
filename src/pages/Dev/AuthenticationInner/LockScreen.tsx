@@ -4,8 +4,8 @@ import MetaTags from "react-meta-tags";
 import { Col, Container, Row } from "reactstrap";
 
 //import images
-import logo from "../../assets/images/logo-sm.svg";
-import avatar from "../../assets/images/users/concern.png";
+import logo from "../../../assets/images/logo-sm.svg";
+import avatar from "../../../assets/images/users/concern.png";
 import CarouselPage from "./CarouselPage";
 
 const LockScreen = () => {

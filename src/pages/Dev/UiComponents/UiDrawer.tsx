@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 import "react-drawer/lib/react-drawer.css";
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 import { Link } from "react-router-dom";
 
 const UiDrawer = () => {

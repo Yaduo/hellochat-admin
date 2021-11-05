@@ -3,10 +3,10 @@ import MetaTags from "react-meta-tags";
 import { Card, CardHeader, Col, Container, Row } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
 //import images
-import logo from "../../assets/images/logo-sm.svg";
+import logo from "../../../assets/images/logo-sm.svg";
 
 const Notifications = () => {
   const toast1 = () => {
