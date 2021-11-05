@@ -154,7 +154,7 @@ const SidebarContent = () => {
             </li>
 
             {/* DevMenu only shows in Dev mode */}
-            {process.env.REACT_APP_DEV_MODE && <DevMenu />}
+            {process.env.REACT_APP_DEV_MODE === "true" && <DevMenu />}
           </ul>
         </div>
       </SimpleBar>
