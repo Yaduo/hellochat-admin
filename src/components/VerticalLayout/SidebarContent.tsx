@@ -103,54 +103,76 @@ const SidebarContent = () => {
             <li className="menu-title">{i18n.t("Managment")}</li>
             <li>
               <Link to="/#" className="has-arrow ">
-                <Icon name="briefcase" />
+                <i className="mdi mdi-account-group"></i>
                 <span>{i18n.t("Users")}</span>
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/ui-alerts">{i18n.t("HelloChat Users")}</Link>
+                  <Link to="/hellochat-users">{i18n.t("HelloChat Users")}</Link>
                 </li>
                 <li>
-                  <Link to="/ui-alerts">{i18n.t("Staff")}</Link>
+                  <Link to="/staffs">{i18n.t("Staff")}</Link>
                 </li>
               </ul>
             </li>
+            <li>
+              <Link to="/service-toggles">
+                <i className="mdi mdi-rocket-launch"></i>
+                <span>{i18n.t("Service Toggles")}</span>
+              </Link>
+            </li>
+            <li>
+              <Link to="/dynamic-contents">
+                <i className="mdi mdi-post"></i>
+                <span>{i18n.t("Dynamic Contents")}</span>
+              </Link>
+            </li>
 
+            
             <li className="menu-title">{i18n.t("HelloChat Pay")}</li>
             <li>
               <Link to="/#" className="has-arrow ">
-                <Icon name="briefcase" />
+                <i className="mdi mdi-rocket-launch"></i>
                 <span>{i18n.t("Wallets")}</span>
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/ui-alerts">{i18n.t("Wallets")}</Link>
+                  <Link to="/wallets">{i18n.t("Wallets")}</Link>
                 </li>
                 <li>
-                  <Link to="/extended-rangeslider">
-                    {i18n.t("Payment Orders")}
-                  </Link>
+                  <Link to="/payment-orders">{i18n.t("Payment Orders")}</Link>
                 </li>
                 <li>
-                  <Link to="/extended-rangeslider">
-                    {i18n.t("Transactions")}
-                  </Link>
+                  <Link to="/transactions">{i18n.t("Transactions")}</Link>
                 </li>
               </ul>
             </li>
+
             <li>
-              <Link to="/ui-alerts">{i18n.t("Parteners")}</Link>
+              <Link to="/parteners">
+                <i className="mdi mdi-account"></i>
+                <span>{i18n.t("Parteners")}</span>
+              </Link>
             </li>
             <li>
-              <Link to="/ui-alerts">{i18n.t("Merchant List")}</Link>
+              <Link to="/merchants">
+                <i className="mdi mdi-rocket-launch"></i>
+                <span>{i18n.t("Merchant List")}</span>
+              </Link>
             </li>
 
             <li className="menu-title">{i18n.t("E-Commerce")}</li>
             <li>
-              <Link to="/ui-alerts">{i18n.t("Products")}</Link>
+              <Link to="/products">
+                <i className="mdi mdi-rocket-launch"></i>
+                <span>{i18n.t("Products")}</span>
+              </Link>
             </li>
             <li>
-              <Link to="/ui-alerts">{i18n.t("Purchase Orders")}</Link>
+              <Link to="/purchase-orders">
+                <i className="mdi mdi-rocket-launch"></i>
+                <span>{i18n.t("Purchase Orders")}</span>
+              </Link>
             </li>
 
             {/* DevMenu only shows in Dev mode */}

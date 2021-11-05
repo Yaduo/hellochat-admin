@@ -2,6 +2,37 @@ import { Redirect } from "react-router-dom";
 //Dashboard
 import Dashboard from "../pages/Dashboard";
 
+// Management
+import HelloChatUserList from "../pages/Users/HelloChatUserList";
+import StaffList from "../pages/Staffs/StaffList";
+import ServiceTogglesList from "../pages/ServiceToggles/ServiceTogglesList";
+import DynamicContentList from "../pages/DynamicContents/DynamicContentList"
+
+// Wallets
+import WalletList from "../pages/Wallets/WalletList";
+import PaymentOrderList from "../pages/PaymentOrders/PaymentOrderList";
+import TransactionList from "../pages/Transactions/TransactionList";
+
+// Parteners
+import PartenerList from "../pages/Parteners/PartenerList";
+import MerchantList from "../pages/Merchants/MerchantList"
+
+// e-com
+import ProductList from "../pages/Products/ProductList"
+import PurchaseOrderList from "../pages/PurchaseOrders/PurchaseOrderList"
+
+
+
+
+
+
+
+
+
+
+
+// ----------------- Dev Routes ---------------------
+
 //Calendar
 import Calendar from "src/pages/Dev/Calendar";
 
@@ -116,6 +147,33 @@ const userRoutes: Array<RouteProps> = [
   //dashboard
   { path: "/dashboard", component: Dashboard },
 
+  // management
+  { path: "/hellochat-users", component: HelloChatUserList },
+  { path: "/staffs", component: StaffList },
+  { path: "/service-toggles", component: ServiceTogglesList },
+  { path: "/dynamic-contents", component: DynamicContentList },
+
+  // Wallets
+  { path: "/wallets", component: WalletList },
+  { path: "/payment-orders", component: PaymentOrderList },
+  { path: "/transactions", component: TransactionList },
+  
+  // Parteners
+  { path: "/parteners", component: PartenerList },
+  { path: "/merchants", component: MerchantList },
+
+  // e-com
+  { path: "/products", component: ProductList },
+  { path: "/purchase-orders", component: PurchaseOrderList },
+  
+  
+  
+  
+
+
+
+
+  // ----------------- Dev Routes -----------------
   //Calendar
   { path: "/apps-calendar", component: Calendar },
 

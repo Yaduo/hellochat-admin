@@ -4,7 +4,6 @@ import React from "react";
 import SidebarContent from "./SidebarContent";
 
 const Sidebar = (props: any) => {
-  console.log("Sidebar props ", props)
   return (
     <React.Fragment>
       <div className="vertical-menu">
