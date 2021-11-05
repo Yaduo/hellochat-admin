@@ -14,13 +14,13 @@ export * from "../layout/actions";
 // export * from "./contacts/actions";
 
 /** Login */
-export * from "../auth/login/actions"
+export * from "./auth/login/actions"
 
 /** Register */
 // export * from "./auth/register/actions";
 
 /** User Profile */
-export * from "../auth/profile/actions";
+export * from "./auth/profile/actions";
 
 /** Forget Password */
 // export * from "./auth/forgetpwd/actions";

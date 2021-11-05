@@ -1,23 +1,19 @@
 import React, { useEffect } from "react";
-import { withRouter } from "react-router-dom";
-
-import { logoutUser } from "../../store/deprecated/actions";
-
-//redux
+import { useHistory } from "react-router-dom";
+import { userSlice } from "src/store/user/slice"
 import { useDispatch } from "react-redux";
 
-interface LogoutProps {
-  history: any;
-}
 
-const Logout = ({ history }: LogoutProps) => {
+const Logout = () => {
   const dispatch = useDispatch();
+  const history = useHistory();
 
   useEffect(() => {
-    dispatch(logoutUser(history));
+    dispatch(userSlice.actions.logOut())
+    history.push("/login")
   }, [dispatch, history]);
 
   return <></>;
 };
 
-export default withRouter(Logout);
+export default Logout;

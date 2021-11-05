@@ -1,8 +1,9 @@
 import { Middleware } from "redux";
+import configs from "src/config";
 
 export const actionLog: Middleware = (store) => (next) => (action) => {
-  console.log("state 当前", store.getState());
-  console.log("fire action ", action);
+  configs.DEBUG == "true" && console.log("state 当前", store.getState());
+  configs.DEBUG == "true" && console.log("fire action ", action);
   next(action);
-  console.log("state 更新", store.getState());
+  configs.DEBUG == "true" && console.log("state 更新", store.getState());
 };

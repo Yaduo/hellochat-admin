@@ -5,6 +5,7 @@ import { actionLog } from "./middlewares/actionLog";
 
 import Layout from "./layout/reducer";
 import { userSlice } from "./user/slice";
+import { kpiSlice } from "./kpi/slice";
 
 const persistConfig = {
   key: "root",
@@ -15,6 +16,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   Layout,
   user: userSlice.reducer,
+  kpi: kpiSlice.reducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

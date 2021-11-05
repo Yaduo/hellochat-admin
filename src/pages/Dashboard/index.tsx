@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MetaTags from "react-meta-tags";
 
 //import Breadcrumbs
@@ -14,56 +14,34 @@ import Trading from "./Trading";
 import Transactions from "./Transactions";
 import RecentActivity from "./RecentActivity";
 import NewSlider from "./NewSlider";
-import Widgets from "./Widgets";
+import WidgetList from "./WidgetList";
 
-const options: Object = {
-  chart: {
-    height: 50,
-    type: "line",
-    toolbar: { show: false },
-  },
-  colors: ["#5156be"],
-  stroke: {
-    curve: "smooth",
-    width: 2,
-  },
-  xaxis: {
-    labels: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
-    },
-  },
-  yaxis: {
-    labels: {
-      show: false,
-    },
-  },
-  tooltip: {
-    fixed: {
-      enabled: false,
-    },
-    x: {
-      show: false,
-    },
-    y: {
-      title: {
-        formatter: function (seriesName: any) {
-          return "";
-        },
-      },
-    },
-    marker: {
-      show: false,
-    },
-  },
-};
+import { useDispatch } from "react-redux";
+import { getKpi } from "src/store/kpi/slice";
+import { useSelector } from "src/store/hooks";
 
 const Dashboard = () => {
+  const dispatch = useDispatch();
+
+  const loading = useSelector((s) => s.kpi.loading);
+  const error = useSelector((s) => s.kpi.error);
+
+  const dau = useSelector((s) => s.kpi.dau);
+  const members = useSelector((s) => s.kpi.members);
+  const transactions = useSelector((s) => s.kpi.transactions);
+  const wallets = useSelector((s) => s.kpi.wallets);
+
+  useEffect(() => {
+    if (
+      dau == null ||
+      members == null ||
+      transactions == null ||
+      wallets == null
+    ) {
+      dispatch(getKpi());
+    }
+  }, []);
+
   return (
     <React.Fragment>
       <div className="page-content">
@@ -75,7 +53,12 @@ const Dashboard = () => {
           <Breadcrumbs title="Dashboard" breadcrumbItem="Dashboard" />
 
           <Row>
-            <Widgets options={options} />
+            <WidgetList
+              loading={loading}
+              members={members}
+              wallets={wallets}
+              transactions={transactions}
+            />
           </Row>
           <Row>
             <WalletBalance />

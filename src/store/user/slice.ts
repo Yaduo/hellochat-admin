@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
+import configs from '../../config';
 
 interface UserState {
   loading: boolean;
@@ -25,14 +26,15 @@ export const signIn = createAsyncThunk(
     thunkAPI
   ) => {
     const { data } = await axios.post(
-      `https://admin-merchant.api.qa.hellochat.me/oauth/token?grant_type=password&username=admin&password=pass`,
+      `${configs.BASE_API_URL}/oauth/token?grant_type=password&username=admin&password=pass`,
       null,
       {
         headers: {
-          Authorization: "Basic Y2xpZW50SWQ6c2VjcmV0",
+          Authorization: `Basic ${configs.TEMP_TOKEN}`,
         },
       }
     );
+    // TODO: do not use fake user info
     let user = {
       uid: 1,
       username: "admin",
@@ -53,6 +55,7 @@ export const userSlice = createSlice({
   reducers: {
     logOut: (state) => {
       state.token = null;
+      state.user = null;
       state.error = null;
       state.loading = false;
     },

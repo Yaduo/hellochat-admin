@@ -7,6 +7,7 @@ import { withRouter } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import DevMenu from "./DevMenu";
+import configs from "../../config";
 
 const SidebarContent = () => {
   const i18n = useTranslation();
@@ -133,7 +134,6 @@ const SidebarContent = () => {
                 <span>{i18n.t("System Notifications")}</span>
               </Link>
             </li>
-            
 
             <li className="menu-title">{i18n.t("HelloChat Pay")}</li>
             <li>
@@ -182,7 +182,7 @@ const SidebarContent = () => {
             </li>
 
             {/* DevMenu only shows in Dev mode */}
-            {process.env.REACT_APP_DEV_MODE === "true" && <DevMenu />}
+            {configs.DEV_MODE === "true" && <DevMenu />}
           </ul>
         </div>
       </SimpleBar>

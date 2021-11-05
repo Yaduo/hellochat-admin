@@ -1,6 +1,5 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import { signIn, userSlice } from "../../store/user/slice";
 import { useSelector } from "../../store/hooks";
 
 interface AuthLayoutProps {

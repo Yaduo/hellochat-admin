@@ -50,6 +50,16 @@ const WidgetsData : Array<DashboardProps> = [
         statusColor: "success",
         series: [12, 14, 2, 47, 42, 15, 47, 75, 65, 19, 14, 2, 47, 42, 15,]
     },
+    {
+        id: 5,
+        title: "Profit Ration",
+        price: 1257,
+        rank: "+$2.75%",
+        isDoller: true,
+        postFix: "%",
+        statusColor: "success",
+        series: [12, 14, 2, 47, 42, 15, 47, 75, 65, 19, 14, 2, 47, 42, 15,]
+    },
 ];
 
 export { WidgetsData };
