@@ -10,6 +10,130 @@ const DevMenu = () => {
     <>
       <li className="menu-title">{i18n.t("Development")}</li>
       <li>
+        <Link to="/#" className="has-arrow">
+          <Icon name="grid" />
+          <span>{i18n.t("Apps")}</span>
+        </Link>
+        <ul className="sub-menu">
+          <li>
+            <Link to="/apps-calendar">{i18n.t("Calendar")}</Link>
+          </li>
+          <li>
+            <Link to="/apps-chat">{i18n.t("Chat")}</Link>
+          </li>
+          <li>
+            <Link to="/#" className="has-arrow">
+              <span>{i18n.t("Email")}</span>
+            </Link>
+            <ul className="sub-menu">
+              <li>
+                <Link to="/email-inbox">{i18n.t("Inbox")}</Link>
+              </li>
+              <li>
+                <Link to="/email-read">{i18n.t("Read Email")} </Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link to="/#" className="has-arrow">
+              <span>{i18n.t("Invoices")}</span>
+            </Link>
+            <ul className="sub-menu">
+              <li>
+                <Link to="/invoices-list">{i18n.t("Invoice List")}</Link>
+              </li>
+              <li>
+                <Link to="/invoices-detail">{i18n.t("Invoice Detail")}</Link>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <Link to="/#" className="has-arrow ">
+              <span>{i18n.t("Contacts")}</span>
+            </Link>
+            <ul className="sub-menu">
+              <li>
+                <Link to="/contacts-grid">{i18n.t("User Grid")}</Link>
+              </li>
+              <li>
+                <Link to="/contacts-list">{i18n.t("User List")}</Link>
+              </li>
+              <li>
+                <Link to="/contacts-profile">{i18n.t("Profile")}</Link>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <Link to="/#" className="has-arrow">
+          <Icon name="users" />
+          <span>{i18n.t("Authentication")}</span>
+        </Link>
+        <ul className="sub-menu">
+          <li>
+            <Link to="/page-login">{i18n.t("Login")}</Link>
+          </li>
+          <li>
+            <Link to="/page-register">{i18n.t("Register")}</Link>
+          </li>
+          <li>
+            <Link to="/page-recoverpw">{i18n.t("Recover Password")}</Link>
+          </li>
+          <li>
+            <Link to="/page-lock-screen">{i18n.t("Lock Screen")}</Link>
+          </li>
+          <li>
+            <Link to="/page-confirm-mail">{i18n.t("Confirm Mail")}</Link>
+          </li>
+          <li>
+            <Link to="/page-email-verification">
+              {i18n.t("Email Verification")}
+            </Link>
+          </li>
+          <li>
+            <Link to="/page-two-step-verification">
+              {i18n.t("Two Step Verification")}
+            </Link>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <Link to="/#" className="has-arrow ">
+          <Icon name="file-text" />
+          <span>{i18n.t("Pages")}</span>
+        </Link>
+        <ul className="sub-menu">
+          <li>
+            <Link to="/pages-starter">{i18n.t("Starter Page")}</Link>
+          </li>
+          <li>
+            <Link to="/pages-maintenance">{i18n.t("Maintenance")}</Link>
+          </li>
+          <li>
+            <Link to="/pages-comingsoon">{i18n.t("Coming Soon")}</Link>
+          </li>
+          <li>
+            <Link to="/pages-timeline">{i18n.t("Timeline")}</Link>
+          </li>
+          <li>
+            <Link to="/pages-faqs">{i18n.t("FAQs")}</Link>
+          </li>
+          <li>
+            <Link to="/pages-pricing">{i18n.t("Pricing")}</Link>
+          </li>
+          <li>
+            <Link to="/pages-404">{i18n.t("Error 404")}</Link>
+          </li>
+          <li>
+            <Link to="/pages-500">{i18n.t("Error 500")}</Link>
+          </li>
+        </ul>
+      </li>
+
+      <li>
         <Link to="/#" className="has-arrow ">
           <Icon name="briefcase" />
           <span>{i18n.t("components")}</span>
