@@ -12,7 +12,7 @@ interface KPIState {
 }
 
 const initialState: KPIState = {
-  loading: false,
+  loading: true,
   error: null,
   members: null,
   wallets: null,

@@ -1,9 +1,9 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 
-const ApexRadial = () => {
+const WalletActivationApexRadial = ({radial}) => {
   const radialchartColors = ["#5156be", "#34c38f"];
-  const series = [80];
+  const series = [radial];
   const options: Object = {
     chart: {
       height: 270,
@@ -53,7 +53,7 @@ const ApexRadial = () => {
   };
   return (
     <ReactApexChart
-      options={options}
+      options={options} 
       series={series}
       type="radialBar"
       height="263"
@@ -62,4 +62,4 @@ const ApexRadial = () => {
   );
 };
 
-export default ApexRadial;
+export default WalletActivationApexRadial;

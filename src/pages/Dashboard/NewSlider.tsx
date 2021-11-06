@@ -5,22 +5,22 @@ import { Carousel, CarouselItem, CarouselIndicators } from "reactstrap";
 const items = [
   {
     id: 1,
-    icon: "currency-btc",
-    title: "Bitcoin",
+    icon: "mdi-recycle-variant",
+    title: "Hello Chat Update",
     description:
       "Bitcoin prices fell sharply amid the global sell-off in equities.Negative news over the past week has dampened sentiment for bitcoin.",
   },
   {
     id: 2,
-    icon: "ethereum",
-    title: "ETH",
+    icon: "mdi-recycle-variant",
+    title: "Hello Chat Update",
     description:
       "Bitcoin prices fell sharply amid the global sell-off in equities.Negative news over the past week has dampened sentiment for bitcoin.",
   },
   {
     id: 3,
-    icon: "litecoin",
-    title: "Litecoin",
+    icon: "mdi-recycle-variant",
+    title: "Hello Chat Update",
     description:
       "Bitcoin prices fell sharply amid the global sell-off in equities.Negative news over the past week has dampened sentiment for bitcoin.",
   },

@@ -7,7 +7,7 @@ import { Col, Container, Row } from "reactstrap";
 
 /** import Mini Widget data */
 import WalletBalance from "./WalletBalance";
-import InvestedOverview from "./InvestedOverview";
+import WalletActivationOverview from "./WalletActivationOverview";
 import MarketOverview from "./MarketOverview";
 import Locations from "./Locations";
 import Trading from "./Trading";
@@ -64,7 +64,7 @@ const Dashboard = () => {
             <WalletBalance loading={loading} wallets={wallets} />
             <Col>
               <Row>
-                <InvestedOverview />
+                <WalletActivationOverview loading={loading} wallets={wallets} members={members} />
                 <NewSlider />
               </Row>
             </Col>
