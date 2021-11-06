@@ -61,7 +61,7 @@ const Dashboard = () => {
             />
           </Row>
           <Row>
-            <WalletBalance />
+            <WalletBalance loading={loading} wallets={wallets} />
             <Col>
               <Row>
                 <InvestedOverview />

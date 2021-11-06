@@ -1,17 +1,16 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 
-const PieChart = () => {
-  const piechartColors = ["#777aca", "#5156be", "#a8aada"];
-  const series = [35, 70, 15];
+const PieChart = ({ wallets }) => {
+
   const options: Object = {
     chart: {
       width: 227,
       height: 227,
       type: "pie",
     },
-    labels: ["Ethereum", "Bitcoin", "Litecoin"],
-    colors: piechartColors,
+    labels: wallets.map(w => w.title),
+    colors: wallets.map(w => w.color),
     stroke: {
       width: 0,
     },
@@ -31,7 +30,7 @@ const PieChart = () => {
   };
 
   return (
-    <ReactApexChart options={options} series={series} type="pie" height="227" />
+    <ReactApexChart options={options} series={wallets.map(w => w.amount)} type="pie" height="227" />
   );
 };
 

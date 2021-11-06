@@ -9,6 +9,9 @@ const WidgetList = ({ loading, members, wallets, transactions }) => {
       data: members && {
         value: members.totalMember,
         rank: members.newRegisteredMember,
+        series: Object.keys(transactions.monthlyTxNumber).map(
+          (key) => transactions.monthlyTxNumber[key]
+        ),
       },
     },
     {
@@ -16,6 +19,7 @@ const WidgetList = ({ loading, members, wallets, transactions }) => {
       data: wallets && {
         value: wallets.totalCashPooling,
         preFix: "$ ",
+        series: [2, 10, 18, 22, 36, 15, 47, 75, 65, 19, 14, 2, 47, 42, 15],
       },
     },
     {
