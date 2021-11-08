@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Button } from "reactstrap";
+import { Row, Col, Spinner } from "reactstrap";
 import BootstrapTable from "react-bootstrap-table-next";
 import paginationFactory, {
   PaginationProvider,
@@ -19,19 +19,23 @@ interface Column {
 }
 
 interface PropsType {
+  loading?: boolean;
   data: any[];
   columns: Column[];
   isCSVExprotable?: boolean;
   onRowClick?: (row, rowIndex) => void;
   onSizeChange?: (size) => void;
   onPageChange?: (page) => void;
-  pagination?: {
+  pagination: {
     currentPage: number;
-    totlaCount: number;
+    pageSize: number;
+    totalElements: number;
+    totalPages: number;
   };
 }
 
 const Datatable: React.FC<PropsType> = ({
+  loading,
   data,
   columns,
   isCSVExprotable,
@@ -45,8 +49,8 @@ const Datatable: React.FC<PropsType> = ({
 
   const pageOptions: any = {
     custom: true,
-    sizePerPage: 10,
-    totalSize: pagination ? pagination.totlaCount : data.length,
+    sizePerPage: pagination.pageSize,
+    totalSize: pagination.totalElements,
   };
 
   const rowEvents = {
@@ -54,6 +58,14 @@ const Datatable: React.FC<PropsType> = ({
       onRowClick && onRowClick(row, rowIndex);
     },
   };
+
+  if (loading) {
+    return (
+      <div>
+        <Spinner />
+      </div>
+    );
+  }
 
   return (
     <PaginationProvider pagination={paginationFactory(pageOptions)}>
@@ -102,6 +114,7 @@ const Datatable: React.FC<PropsType> = ({
                   <div className="d-inline">
                     <SizePerPageRenderer
                       options={[10, 20, 50, 100]}
+                      currentSize={pagination.pageSize}
                       onSizeChange={(size) => {
                         onSizeChange && onSizeChange(size);
                       }}
@@ -109,10 +122,10 @@ const Datatable: React.FC<PropsType> = ({
                   </div>
                   <div className="text-md-right ms-auto">
                     <PageListRenderer
-                      currentPage={1}
-                      totlaPage={100}
+                      currentPage={pagination.currentPage + 1}
+                      totlaPage={pagination.totalPages}
                       onPageChange={(page) =>
-                        onPageChange && onPageChange(page)
+                        onPageChange && onPageChange(page - 1)
                       }
                     />
                   </div>

@@ -12,14 +12,15 @@ interface PropsTypes {
     | [number, number]
     | [number, number, number]
     | [number, number, number, number];
+  currentSize: number;
   onSizeChange: (size) => void;
 }
 
 export const SizePerPageRenderer: React.FC<PropsTypes> = ({
   options,
+  currentSize,
   onSizeChange,
 }) => {
-  const [currentSize, setCurrentSize] = useState(options[0]);
   const [margin90, setMargin90] = useState(false);
 
   return (
@@ -41,7 +42,6 @@ export const SizePerPageRenderer: React.FC<PropsTypes> = ({
               to="#"
               key={index}
               onClick={() => {
-                setCurrentSize(option);
                 onSizeChange(option);
               }}
             >

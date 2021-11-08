@@ -67,8 +67,8 @@ const WalletBalance = ({ loading, wallets }) => {
                   </div>
                 </div>
                 <div className="col-sm align-self-center">
-                  {walletList.map((w) => (
-                    <div className="mt-4 mt-sm-0">
+                  {walletList.map((w, index) => (
+                    <div className="mt-4 mt-sm-0" key={index}>
                       <div>
                         <p className="mb-2">
                           {w.title + ": "}
