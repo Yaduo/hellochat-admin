@@ -1,20 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Card, CardBody, CardTitle } from "reactstrap";
 import MetaTags from "react-meta-tags";
-
-// datatable related plugins
-import BootstrapTable from "react-bootstrap-table-next";
-import paginationFactory, {
-  PaginationProvider,
-  PaginationListStandalone,
-  SizePerPageDropdownStandalone,
-} from "react-bootstrap-table2-paginator";
-
-import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
-
-//Import Breadcrumb
 import Breadcrumbs from "../../components/Common/Breadcrumb";
-import "./datatables.scss";
+import axios from "axios";
+import configs from "src/config";
+import Datatable from "../../components/Common/Datatable/Datatable";
+import { size } from "lodash";
 
 const HelloChatUserList = () => {
   const columns = [
@@ -358,25 +349,18 @@ const HelloChatUserList = () => {
     },
   ];
 
-  const defaultSorted: any = [
-    {
-      dataField: "id",
-      order: "asc",
-    },
-  ];
-
-  const pageOptions: any = {
-    sizePerPage: 10,
-    totalSize: productData.length, // replace later with size(customers),
-    custom: true,
+  const getUsers = () => {
+    //http://localhost:8080/proxy/hellochat/members?page=0&size=10&phone=60488
   };
 
-  // Select All Button operation
-  const selectRow: any = {
-    mode: "checkbox",
-  };
+  const getMemberStatistics = (access_token) =>
+    axios.get(`${configs.HELLOCHAT_BASE_API_URL}/kpi/members/statistics`, {
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+      },
+    });
 
-  const { SearchBar } = Search;
+  useEffect(() => {}, []);
 
   return (
     <React.Fragment>
@@ -386,81 +370,21 @@ const HelloChatUserList = () => {
         </MetaTags>
         <div className="container-fluid">
           <Breadcrumbs title="Tables" breadcrumbItem="Data Tables" />
-
           <Row>
             <Col className="col-12">
               <Card>
                 <CardBody>
-                  <CardTitle className="h4">Default Datatable </CardTitle>
-                  <p className="card-title-desc">
-                    react-bootstrap-table-next plugin has most features enabled
-                    by default, so all you need to do to use it with your own
-                    tables is to call the construction function:{" "}
-                    <code>react-bootstrap-table-next </code>.
-                  </p>
-
-                  <PaginationProvider
-                    pagination={paginationFactory(pageOptions)}
-                    // columns={columns}
-                    // data={productData}
-                  >
-                    {({ paginationProps, paginationTableProps }) => (
-                      <ToolkitProvider
-                        keyField="id"
-                        columns={columns}
-                        data={productData}
-                        search
-                      >
-                        {toolkitProps => (
-                          <React.Fragment>
-                            <Row className="mb-2">
-                              <Col md="4">
-                                <div className="search-box me-2 mb-2 d-inline-block">
-                                  <div className="position-relative">
-                                    <SearchBar {...toolkitProps.searchProps} />
-                                    <i className="bx bx-search-alt search-icon" />
-                                  </div>
-                                </div>
-                              </Col>
-                            </Row>
-
-                            <Row>
-                              <Col xl="12">
-                                <div className="table-responsive">
-                                  <BootstrapTable
-                                    // responsive
-                                    bordered={false}
-                                    striped={false}
-                                    defaultSorted={defaultSorted}
-                                    selectRow={selectRow}
-                                    classes={"table align-middle table-nowrap"}
-                                    headerWrapperClasses={"thead-light"}
-                                    {...toolkitProps.baseProps}
-                                    {...paginationTableProps}
-                                  />
-                                </div>
-                              </Col>
-                            </Row>
-
-                            <Row className="align-items-md-center mt-30">
-                              <Col className="inner-custom-pagination d-flex">
-                                <div className="d-inline">
-                                  <SizePerPageDropdownStandalone
-                                    {...paginationProps}
-                                  />
-                                </div>
-                                <div className="text-md-right ms-auto">
-                                  <PaginationListStandalone
-                                    {...paginationProps}
-                                  />
-                                </div>
-                              </Col>
-                            </Row>
-                          </React.Fragment>
-                        )}
-                      </ToolkitProvider>
-                    )}
-                  </PaginationProvider>
+                  <Datatable
+                    data={productData}
+                    columns={columns}
+                    pagination={{ currentPage: 1, totlaCount: 100 }}
+                    onPageChange={() => {}}
+                    onSizeChange={() => {}}
+                    onRowClick={(row, rowIndex) => {
+                      console.log("onRowClick ", row);
+                      console.log("rowIndex ", rowIndex);
+                    }}
+                  />
                 </CardBody>
               </Card>
             </Col>
