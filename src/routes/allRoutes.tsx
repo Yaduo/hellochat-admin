@@ -9,6 +9,7 @@ import userProfile from "src/pages/Authentication/user-profile";
 import PagesComingsoon from "src/pages/Dev/Utility/PageComingsoon";
 // Management
 import HelloChatUserList from "../pages/Users/HelloChatUserList";
+import UserProfile from "../pages/UserProfile/Profile";
 import StaffList from "../pages/Staffs/StaffList";
 import ServiceTogglesList from "../pages/ServiceToggles/ServiceTogglesList";
 import DynamicContentList from "../pages/DynamicContents/DynamicContentList"
@@ -122,6 +123,7 @@ const userRoutes: Array<RouteProps> = [
 
   // management
   { path: "/hellochat-users", component: HelloChatUserList },
+  { path: "/hellochat-users/:userId", component: UserProfile },
   { path: "/staffs", component: StaffList },
   { path: "/service-toggles", component: ServiceTogglesList },
   { path: "/dynamic-contents", component: DynamicContentList },

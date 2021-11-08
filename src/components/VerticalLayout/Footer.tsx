@@ -12,7 +12,10 @@ const Footer = () => {
             <Col md={6}>
               <div className="text-sm-end d-none d-sm-block">
                 Design & Develop by
-                <Link to="https://www.hellochat.com/" className="ms-1 text-decoration-underline">
+                <Link
+                  to="https://www.hellochat.com/"
+                  className="ms-1 text-decoration-underline"
+                >
                   HelloChat
                 </Link>
               </div>
