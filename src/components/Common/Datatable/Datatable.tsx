@@ -79,21 +79,13 @@ const Datatable: React.FC<PropsType> = ({
         >
           {(toolkitProps) => (
             <React.Fragment>
-              <Row className="mb-2">
-                <Col md="3">
-                  <div className="search-box me-2 mb-2 d-inline-block">
-                    <div className="position-relative">
-                      <SearchBar {...toolkitProps.searchProps} />
-                      <i className="bx bx-search-alt search-icon" />
-                    </div>
-                  </div>
-                </Col>
+              {/* <Row className="mb-2">
                 <Col md="3">
                   <ExportCSVButton {...toolkitProps.csvProps}>
                     Export CSV!!
                   </ExportCSVButton>
                 </Col>
-              </Row>
+              </Row> */}
               <Row>
                 <Col xl="12">
                   <div className="table-responsive">

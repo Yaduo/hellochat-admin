@@ -1,18 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MetaTags from "react-meta-tags";
-import { Container, Row } from "reactstrap";
+import { Container, Row, Spinner } from "reactstrap";
 import { RouteComponentProps, useParams } from "react-router-dom";
 import ProfileTab from "./ProfileTab";
 import Breadcrumbs from "src/components/Common/Breadcrumb";
+import axios from "axios";
+import configs from "src/config";
+import { useSelector } from "src/store/hooks";
 
 interface MatchParams {
   userId: string;
 }
 
-const UserProfile: React.FC<RouteComponentProps<MatchParams>>  = () => {
+const UserProfile: React.FC<RouteComponentProps<MatchParams>> = () => {
   const { userId } = useParams<MatchParams>();
-  console.log("userId ", userId)
-  
+  const access_token = useSelector((s) => s.user.token);
+  const [loading, setLoading] = useState(true);
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    getUser();
+  }, []);
+
+  const getUser = async () => {
+    setLoading(true);
+    const { data } = await axios.get(
+      `${configs.BASE_API_URL}/proxy/hellochat/members/${userId}`,
+      {
+        headers: {
+          Authorization: `Bearer ${access_token}`,
+        },
+      }
+    );
+    console.log("user, ", data);
+    setUser(data);
+    setLoading(false);
+  };
+
   return (
     <React.Fragment>
       <div className="page-content">
@@ -25,7 +49,7 @@ const UserProfile: React.FC<RouteComponentProps<MatchParams>>  = () => {
 
           <Row>
             {/* Render profilemenu */}
-            <ProfileTab />
+            {loading ? <Spinner /> : <ProfileTab user={user} />}
           </Row>
         </Container>
       </div>
