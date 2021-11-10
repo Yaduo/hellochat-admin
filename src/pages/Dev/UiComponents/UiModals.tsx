@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiModal = () => {
   const [modal_standard, setmodal_standard] = useState(false);
@@ -76,7 +76,7 @@ const UiModal = () => {
           <title>Modals | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Components" breadcrumbItem="Modals" />
+          <Breadcrumb title="Components" breadcrumbItem="Modals" />
 
           <Row>
             <Col xs={12}>

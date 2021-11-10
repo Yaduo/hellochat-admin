@@ -11,7 +11,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { withRouter } from "react-router-dom";
 
 //Import Breadcrumb
-import Breadcrumb from "../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../components/Common/Breadcrumb";
 
 import avatar from "../../assets/images/users/concern.png";
 

@@ -1,9 +1,9 @@
 import React from "react";
 
 //import components
-import SidebarContent from "./SidebarContent";
+import {SidebarContent} from "./SidebarContent";
 
-const Sidebar = (props: any) => {
+export const Sidebar = (props: any) => {
   return (
     <React.Fragment>
       <div className="vertical-menu">
@@ -14,5 +14,3 @@ const Sidebar = (props: any) => {
     </React.Fragment>
   );
 };
-
-export default Sidebar;

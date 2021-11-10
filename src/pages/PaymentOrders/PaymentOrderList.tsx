@@ -13,8 +13,7 @@ import paginationFactory, {
 import ToolkitProvider, { Search } from "react-bootstrap-table2-toolkit";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
-import "./datatables.scss";
+import {Breadcrumb} from "../../components/Common/Breadcrumb";
 
 const PaymentOrderList = () => {
   const columns = [
@@ -385,7 +384,7 @@ const PaymentOrderList = () => {
           <title>Data Tables | HelloChat Admin</title>
         </MetaTags>
         <div className="container-fluid">
-          <Breadcrumbs title="Tables" breadcrumbItem="Data Tables" />
+          <Breadcrumb title="Tables" breadcrumbItem="Data Tables" />
 
           <Row>
             <Col className="col-12">

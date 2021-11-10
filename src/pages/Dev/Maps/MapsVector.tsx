@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 import Vector from "./Vectormap";
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const MapsVector = () => {
   return (
@@ -22,7 +22,7 @@ const MapsVector = () => {
           <title>Vector Maps | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Maps" breadcrumbItem="Vector Maps" />
+          <Breadcrumb title="Maps" breadcrumbItem="Vector Maps" />
 
           <Row>
             <Col lg={6}>

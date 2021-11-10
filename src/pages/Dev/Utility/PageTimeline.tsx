@@ -11,7 +11,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 import { Link } from "react-router-dom";
 
 import img1 from "../../../assets/images/small/img-2.jpg";
@@ -26,7 +26,7 @@ const PageTimeline = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Pages" breadcrumbItem="Timeline" />
+          <Breadcrumb title="Pages" breadcrumbItem="Timeline" />
           <Row>
             <Col lg={12}>
               <Card>

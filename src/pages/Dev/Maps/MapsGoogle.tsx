@@ -6,7 +6,7 @@ import MetaTags from "react-meta-tags";
 import { LightData } from "./LightData";
 import { Row, Col, Card, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const LoadingContainer = () => <div>Loading...</div>;
 
@@ -29,7 +29,7 @@ const MapsGoogle = ({ google, zoom }: GoogleProps) => {
           <title>Google Maps | HelloChat Admin</title>
         </MetaTags>
         <div className="container-fluid">
-          <Breadcrumbs title="Maps" breadcrumbItem="Google Maps" />
+          <Breadcrumb title="Maps" breadcrumbItem="Google Maps" />
 
           <Row>
             <Col lg={6}>

@@ -11,7 +11,7 @@ import {
   Container,
 } from "reactstrap";
 
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 // Form Mask
 import InputMask from "react-input-mask";
@@ -114,7 +114,7 @@ const FormMask = () => {
           <title>Form Mask | Skote - React Admin & Dashboard Template</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Form" breadcrumbItem="Form Mask" />
+          <Breadcrumb title="Form" breadcrumbItem="Form Mask" />
 
           <Row>
             <Col lg={12}>

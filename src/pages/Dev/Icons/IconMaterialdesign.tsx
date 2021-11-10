@@ -4,7 +4,7 @@ import MetaTags from "react-meta-tags";
 import { Container, Row, Col, Card, CardBody, CardHeader } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const IconMaterialdesign = () => {
   useEffect(() => {
@@ -7036,7 +7036,7 @@ const IconMaterialdesign = () => {
           </title>
         </MetaTags>
         <Container fluid>
-          <Breadcrumbs title="Icons" breadcrumbItem="MDI" />
+          <Breadcrumb title="Icons" breadcrumbItem="MDI" />
 
           <Row className="icons-demo-content">
             <Col xs="12">

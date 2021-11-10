@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Row, Col, Card, CardBody, CardTitle, CardHeader } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 import {
   Sparklines,
   SparklinesLine,
@@ -22,7 +22,7 @@ const SparklineChart = () => {
         </MetaTags>
         <div className="container-fluid">
           {/* Render Breadcrumb */}
-          <Breadcrumbs title="Charts" breadcrumbItem="Sparkline" />
+          <Breadcrumb title="Charts" breadcrumbItem="Sparkline" />
 
           <Row>
             <Col sm={4}>

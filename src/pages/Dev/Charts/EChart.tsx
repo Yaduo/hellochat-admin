@@ -11,7 +11,7 @@ import {
 import MetaTags from "react-meta-tags";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 // Charts
 import Gauge from "../AllCharts/echart/gaugechart";
@@ -32,7 +32,7 @@ const EChart = () => {
         </MetaTags>
         <Container fluid={true}>
           {/* Render Breadcrumb */}
-          <Breadcrumbs title="Charts" breadcrumbItem="E Chart" />
+          <Breadcrumb title="Charts" breadcrumbItem="E Chart" />
           <Row>
             <Col xl="6">
               <Card>

@@ -6,10 +6,10 @@ import MetisMenu from "metismenujs";
 import { withRouter } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import DevMenu from "./DevMenu";
+import {DevMenu} from "./DevMenu";
 import configs from "../../config";
 
-const SidebarContent = () => {
+export const SidebarContent = () => {
   const i18n = useTranslation();
   const ref = useRef<any>();
   const location = useLocation();
@@ -189,5 +189,3 @@ const SidebarContent = () => {
     </React.Fragment>
   );
 };
-
-export default SidebarContent;

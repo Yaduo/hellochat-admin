@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Container } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiColors = () => {
   return (
@@ -14,7 +14,7 @@ const UiColors = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Components" breadcrumbItem="Colors" />
+          <Breadcrumb title="Components" breadcrumbItem="Colors" />
           <div className="row">
             <div className="col-12">
               <div className="card">

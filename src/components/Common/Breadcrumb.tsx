@@ -7,7 +7,7 @@ interface BreadcrumbProps {
   title: string;
 }
 
-const Breadcrumb = ({ breadcrumbItem, title }: BreadcrumbProps) => {
+export const Breadcrumb = ({ breadcrumbItem, title }: BreadcrumbProps) => {
   return (
     <Row>
       <Col xs="12">
@@ -28,5 +28,3 @@ const Breadcrumb = ({ breadcrumbItem, title }: BreadcrumbProps) => {
     </Row>
   );
 };
-
-export default Breadcrumb;

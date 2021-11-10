@@ -4,7 +4,7 @@ import { withRouter } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Icon from "@ailibs/feather-react-ts";
 
-const DevMenu = () => {
+export const DevMenu = () => {
   const i18n = useTranslation();
   return (
     <>
@@ -358,5 +358,3 @@ const DevMenu = () => {
     </>
   );
 };
-
-export default DevMenu;

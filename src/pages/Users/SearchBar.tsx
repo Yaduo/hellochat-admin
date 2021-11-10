@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Label, Input } from "reactstrap";
-import SearchInput from "src/components/Common/SearchInput";
+import { SearchInput } from "src/components/Common/SearchInput";
 
 interface PropType {
   name: string | null;

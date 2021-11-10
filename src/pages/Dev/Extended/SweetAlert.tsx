@@ -6,7 +6,7 @@ import MetaTags from "react-meta-tags";
 import SweetAlert from "react-bootstrap-sweetalert";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiSweetAlert = () => {
   const [basic, setbasic] = useState(false);
@@ -33,7 +33,7 @@ const UiSweetAlert = () => {
           <title>Sweet-Alert | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Extended" breadcrumbItem="Sweet Alert" />
+          <Breadcrumb title="Extended" breadcrumbItem="Sweet Alert" />
           {success_dlg ? (
             <SweetAlert
               success

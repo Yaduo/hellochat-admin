@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const BasicTable = () => {
   return (
@@ -23,7 +23,7 @@ const BasicTable = () => {
           <title>Basic Tables | HelloChat Admin</title>
         </MetaTags>
         <div className="container-fluid">
-          <Breadcrumbs title="Tables" breadcrumbItem="Basic Tables" />
+          <Breadcrumb title="Tables" breadcrumbItem="Basic Tables" />
 
           <Row>
             <Col md={6}>

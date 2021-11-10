@@ -9,7 +9,7 @@ import img3 from "../../../assets/images/small/img-3.jpg";
 import img4 from "../../../assets/images/small/img-4.jpg";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 //Import Email Sidebar
 import EmailSideBar from "./email-sidebar";
@@ -26,7 +26,7 @@ const EmailRead = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Email" breadcrumbItem="Read Email" />
+          <Breadcrumb title="Email" breadcrumbItem="Read Email" />
 
           <Row>
             <Col xs="12">

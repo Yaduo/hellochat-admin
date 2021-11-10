@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MetaTags from "react-meta-tags";
 import { Row, Col, Card, CardBody, CardTitle, Container } from "reactstrap";
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 import Slider from "react-rangeslider";
 import "react-rangeslider/lib/index.css";
@@ -44,7 +44,7 @@ const RangeSlider = () => {
           <title>Range Slider | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Components" breadcrumbItem="Range Slider" />
+          <Breadcrumb title="Components" breadcrumbItem="Range Slider" />
 
           <Row>
             <Col className="col-12">

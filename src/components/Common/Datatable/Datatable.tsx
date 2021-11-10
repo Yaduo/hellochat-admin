@@ -34,7 +34,7 @@ interface PropsType {
   };
 }
 
-const Datatable: React.FC<PropsType> = ({
+export const Datatable: React.FC<PropsType> = ({
   loading,
   data,
   columns,
@@ -130,5 +130,3 @@ const Datatable: React.FC<PropsType> = ({
     </PaginationProvider>
   );
 };
-
-export default Datatable;

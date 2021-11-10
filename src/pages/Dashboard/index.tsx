@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import MetaTags from "react-meta-tags";
 
 //import Breadcrumbs
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../components/Common/Breadcrumb";
 import { Col, Container, Row } from "reactstrap";
 
 /** import Mini Widget data */
@@ -50,7 +50,7 @@ const Dashboard = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Dashboard" breadcrumbItem="Dashboard" />
+          <Breadcrumb title="Dashboard" breadcrumbItem="Dashboard" />
 
           <Row>
             <WidgetList

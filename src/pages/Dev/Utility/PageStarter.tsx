@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Container } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const PageStarter = () => {
   return (
@@ -14,7 +14,7 @@ const PageStarter = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Pages" breadcrumbItem="Starter Page" />
+          <Breadcrumb title="Pages" breadcrumbItem="Starter Page" />
         </Container>
       </div>
     </React.Fragment>

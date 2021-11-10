@@ -14,7 +14,7 @@ import {
 import { map } from "lodash";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 //Import Card
 import CardContact from "./cardContact";
@@ -45,7 +45,7 @@ const ContactsGrid = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Contacts" breadcrumbItem="User Grid" />
+          <Breadcrumb title="Contacts" breadcrumbItem="User Grid" />
           <Row className="align-items-center">
             <Col md={6}>
               <div className="mb-3">

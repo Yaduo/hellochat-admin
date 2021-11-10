@@ -11,12 +11,13 @@ import {
 
 // Layout Related Components
 import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Footer from "./Footer";
+import {Sidebar} from "./Sidebar";
+import {Footer} from "./Footer";
 
 //redux
 import { useSelector, useDispatch } from "react-redux";
-const Layout = (props: any) => {
+
+export const VerticalLayout = (props: any) => {
   const dispatch = useDispatch();
 
   const {
@@ -155,7 +156,7 @@ const Layout = (props: any) => {
   );
 };
 
-Layout.propTypes = {
+VerticalLayout.propTypes = {
   changeLayoutWidth: PropTypes.func,
   changeSidebarTheme: PropTypes.func,
   changeSidebarType: PropTypes.func,
@@ -170,5 +171,3 @@ Layout.propTypes = {
   topbarTheme: PropTypes.any,
   changelayoutMode: PropTypes.func,
 };
-
-export default Layout;

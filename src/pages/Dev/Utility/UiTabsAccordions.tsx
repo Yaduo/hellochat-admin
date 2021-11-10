@@ -24,7 +24,7 @@ import {
 import { Link } from "react-router-dom";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 import classnames from "classnames";
 
@@ -139,7 +139,7 @@ const UiTabsAccordions = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Pages" breadcrumbItem="Tabs & Accordions" />
+          <Breadcrumb title="Pages" breadcrumbItem="Tabs & Accordions" />
           <Row>
             <Col xl={6}>
               <Card>

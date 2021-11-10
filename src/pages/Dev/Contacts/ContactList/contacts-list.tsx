@@ -30,7 +30,7 @@ import BootstrapTable from "react-bootstrap-table-next";
 import * as images from "../../../../assets/images";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../../components/Common/Breadcrumb";
 
 // import {
 //   getUsers as onGetUsers,
@@ -267,7 +267,7 @@ const ContactsList = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Contacts" breadcrumbItem="User List" />
+          <Breadcrumb title="Contacts" breadcrumbItem="User List" />
           <Row>
             <Col lg="12">
               <Card>

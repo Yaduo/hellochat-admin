@@ -23,7 +23,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiGeneral = () => {
   const [popovertop, setpopovertop] = useState(false);
@@ -44,7 +44,7 @@ const UiGeneral = () => {
           <title>General | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Components" breadcrumbItem="General" />
+          <Breadcrumb title="Components" breadcrumbItem="General" />
 
           <Row>
             <Col lg={6}>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <React.Fragment>
       <footer className="footer">
@@ -26,5 +26,3 @@ const Footer = () => {
     </React.Fragment>
   );
 };
-
-export default Footer;

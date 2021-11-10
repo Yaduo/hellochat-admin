@@ -10,7 +10,7 @@ import { logoutUser } from "../../../store/deprecated/actions";
 import { useDispatch } from "react-redux";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 interface SessionTimeoutProps {
   history: any;
@@ -86,7 +86,7 @@ const SessionTimeout = ({ history }: SessionTimeoutProps) => {
         <Container fluid={true}>
           {timeralert}
 
-          <Breadcrumbs title="Extended" breadcrumbItem="Session Timeout" />
+          <Breadcrumb title="Extended" breadcrumbItem="Session Timeout" />
           <Row>
             <Col>
               <Card>

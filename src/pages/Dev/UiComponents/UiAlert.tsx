@@ -14,7 +14,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiAlert = () => {
   return (
@@ -25,7 +25,7 @@ const UiAlert = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Components" breadcrumbItem="Alerts" />
+          <Breadcrumb title="Components" breadcrumbItem="Alerts" />
 
           <Row>
             <Col xl={6}>

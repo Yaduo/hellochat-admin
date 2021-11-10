@@ -22,7 +22,7 @@ import {
   Container,
 } from "reactstrap";
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const Apexchart = () => {
   return (
@@ -32,7 +32,7 @@ const Apexchart = () => {
           <title>Apex Charts | HelloChat Admin</title>
         </MetaTags>
         <Container fluid>
-          <Breadcrumbs title="Charts" breadcrumbItem="Apex Charts" />
+          <Breadcrumb title="Charts" breadcrumbItem="Apex Charts" />
 
           <Row>
             <Col xl={6}>

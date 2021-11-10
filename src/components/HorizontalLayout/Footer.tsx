@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <React.Fragment>
       <footer className="footer">
@@ -12,7 +12,10 @@ const Footer = () => {
             <Col md={6}>
               <div className="text-sm-end d-none d-sm-block">
                 Design & Develop by
-                <Link to="https://www.hellochat.com/" className="ms-1 text-decoration-underline">
+                <Link
+                  to="https://www.hellochat.com/"
+                  className="ms-1 text-decoration-underline"
+                >
                   HelloChat
                 </Link>
               </div>
@@ -23,5 +26,3 @@ const Footer = () => {
     </React.Fragment>
   );
 };
-
-export default Footer;

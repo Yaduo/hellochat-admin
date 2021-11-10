@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Card, CardHeader, Col, Container, Row } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 //import images
 import logo from "../../../assets/images/logo-sm.svg";
@@ -39,7 +39,7 @@ const Notifications = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Extended" breadcrumbItem="Notifications" />
+          <Breadcrumb title="Extended" breadcrumbItem="Notifications" />
           <Row>
             <Col xl={12}>
               <Card>

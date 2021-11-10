@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiVideo = () => {
   return (
@@ -23,7 +23,7 @@ const UiVideo = () => {
           <title>Video | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Pages" breadcrumbItem="Video" />
+          <Breadcrumb title="Pages" breadcrumbItem="Video" />
 
           <Row>
             <Col lg={6}>

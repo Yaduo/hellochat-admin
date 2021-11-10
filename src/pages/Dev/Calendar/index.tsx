@@ -25,7 +25,7 @@ import BootstrapTheme from "@fullcalendar/bootstrap";
 import calendar from "../../../assets/images/undraw-calendar.svg";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 // import {
 //   addNewEvent as onAddNewEvent,
@@ -234,7 +234,7 @@ const Calender = ({ className }: CalendarProps) => {
         </MetaTags>
         <Container fluid={true}>
           {/* Render Breadcrumb */}
-          <Breadcrumbs title="HelloChat" breadcrumbItem="Calendar" />
+          <Breadcrumb title="HelloChat" breadcrumbItem="Calendar" />
           <Row>
             <Col xs={12}>
               <Row>

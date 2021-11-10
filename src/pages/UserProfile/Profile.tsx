@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Container, Row, Spinner } from "reactstrap";
 import { RouteComponentProps, useParams } from "react-router-dom";
 import ProfileTab from "./ProfileTab";
-import Breadcrumbs from "src/components/Common/Breadcrumb";
+import {Breadcrumb} from "src/components/Common/Breadcrumb";
 import axios from "axios";
 import configs from "src/config";
 import { useSelector } from "src/store/hooks";
@@ -45,7 +45,7 @@ const UserProfile: React.FC<RouteComponentProps<MatchParams>> = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Contacts" breadcrumbItem="Profile" />
+          <Breadcrumb title="Contacts" breadcrumbItem="Profile" />
 
           <Row>
             {/* Render profilemenu */}

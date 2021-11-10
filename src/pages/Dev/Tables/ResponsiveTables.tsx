@@ -13,7 +13,7 @@ import {
 import { Table, Thead, Tbody, Tr, Th, Td } from "react-super-responsive-table";
 import "react-super-responsive-table/dist/SuperResponsiveTableStyle.css";
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const ResponsiveTables = () => {
   return (
@@ -25,7 +25,7 @@ const ResponsiveTables = () => {
           </title>
         </MetaTags>
         <div className="container-fluid">
-          <Breadcrumbs title="Tables" breadcrumbItem="Responsive Table" />
+          <Breadcrumb title="Tables" breadcrumbItem="Responsive Table" />
 
           <Row>
             <Col>

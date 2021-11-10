@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 import "react-drawer/lib/react-drawer.css";
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 import { Link } from "react-router-dom";
 
 const UiDrawer = () => {
@@ -45,7 +45,7 @@ const UiDrawer = () => {
           <title>Drawer | HelloChat Admin</title>
         </MetaTags>
         <div className="container-fluid">
-          <Breadcrumbs title="Components" breadcrumbItem="Drawer" />
+          <Breadcrumb title="Components" breadcrumbItem="Drawer" />
           <Row>
             <Col>
               <Card>

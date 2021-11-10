@@ -32,7 +32,7 @@ import PerfectScrollbar from "react-perfect-scrollbar";
 import "react-perfect-scrollbar/dist/css/styles.css";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 import * as images from "../../../assets/images/index";
 // import {
 //   addMessage as onAddMessage,
@@ -147,7 +147,7 @@ const Chat = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumb */}
-          <Breadcrumbs title="Apps" breadcrumbItem="Chat" />
+          <Breadcrumb title="Apps" breadcrumbItem="Chat" />
 
           <div className="d-lg-flex">
             <Card className="chat-leftsidebar">

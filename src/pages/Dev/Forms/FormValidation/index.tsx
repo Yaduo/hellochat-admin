@@ -15,7 +15,7 @@ import {
 import { AvForm, AvField } from "availity-reactstrap-validation";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../../components/Common/Breadcrumb";
 import NormalValidation from "./NormalValidation";
 import TooltipsValidation from "./TooltipsValidation";
 
@@ -30,7 +30,7 @@ const FormValidation = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Forms" breadcrumbItem="Form Validation" />
+          <Breadcrumb title="Forms" breadcrumbItem="Form Validation" />
 
           <Row>
             {/* import NormalValidation */}

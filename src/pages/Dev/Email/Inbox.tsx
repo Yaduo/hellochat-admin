@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col, Button, Input, Label, Card } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 //Import Email Sidebar
 import EmailSideBar from "./email-sidebar";
@@ -22,7 +22,7 @@ const EmailInbox = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Email" breadcrumbItem="Inbox" />
+          <Breadcrumb title="Email" breadcrumbItem="Inbox" />
 
           <Row>
             <Col xs="12">

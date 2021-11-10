@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Card, CardBody, Col, Container, Row } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const PageFaqs = () => {
   return (
@@ -14,7 +14,7 @@ const PageFaqs = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Pages" breadcrumbItem="FAQs" />
+          <Breadcrumb title="Pages" breadcrumbItem="FAQs" />
           <Row>
             <Col lg={12}>
               <Card>

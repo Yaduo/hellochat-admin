@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Col, Label, Input } from "reactstrap";
+import React from "react";
+import { Input } from "reactstrap";
 
 interface PropType {
   value: string | null;
@@ -8,7 +8,7 @@ interface PropType {
   onSearch: () => void;
 }
 
-const SearchInput: React.FC<PropType> = ({
+export const SearchInput: React.FC<PropType> = ({
   value,
   placeholder,
   onChange,
@@ -41,5 +41,3 @@ const SearchInput: React.FC<PropType> = ({
     </div>
   );
 };
-
-export default SearchInput;

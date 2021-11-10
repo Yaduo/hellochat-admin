@@ -11,7 +11,7 @@ import {
   CardHeader,
 } from "reactstrap";
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 // import chartJs
 import LineCharts from "../AllCharts/chartjs/linechart";
@@ -31,7 +31,7 @@ const ChartjsChart = () => {
           </title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Charts" breadcrumbItem="Chartjs Charts" />
+          <Breadcrumb title="Charts" breadcrumbItem="Chartjs Charts" />
           <Row>
             <Col xl={6}>
               <Card>

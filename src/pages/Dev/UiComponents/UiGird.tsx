@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Card, CardBody, CardHeader, Col, Container, Row } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiGrid = () => {
   return (
@@ -14,7 +14,7 @@ const UiGrid = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Components" breadcrumbItem="Grid" />
+          <Breadcrumb title="Components" breadcrumbItem="Grid" />
           <Row>
             <Col xs={12}>
               <Card>

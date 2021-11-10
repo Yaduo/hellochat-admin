@@ -5,7 +5,7 @@ import { Card, CardBody, Col, Container, Row, Table } from "reactstrap";
 import { isEmpty, map } from "lodash";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 //Import Image
 import logo from "../../../assets/images/logo-sm.svg";
@@ -46,7 +46,7 @@ const InvoiceDetails = (props: any) => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Invoices" breadcrumbItem="Invoice Detail" />
+          <Breadcrumb title="Invoices" breadcrumbItem="Invoice Detail" />
           {!isEmpty(invoiceDetail) && (
             <Row>
               <Col lg="12">

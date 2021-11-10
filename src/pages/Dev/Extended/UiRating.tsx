@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import MetaTags from "react-meta-tags";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 import { Row, Col, Card, CardBody, Container } from "reactstrap";
 
 // Rating Plugin
@@ -58,7 +58,7 @@ const UiRating = () => {
           <title>Rating | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Extended" breadcrumbItem="Rating" />
+          <Breadcrumb title="Extended" breadcrumbItem="Rating" />
 
           <Row>
             <Col xs={12}>

@@ -7,7 +7,7 @@ import BootstrapTable from "react-bootstrap-table-next";
 import cellEditFactory from "react-bootstrap-table2-editor";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const products = [
   { id: 1, age: 25, qty: 1500, cost: 1000 },
@@ -46,7 +46,7 @@ const EditableTables = () => {
           </title>
         </MetaTags>
         <div className="container-fluid">
-          <Breadcrumbs title="Tables" breadcrumbItem="Editable Table" />
+          <Breadcrumb title="Tables" breadcrumbItem="Editable Table" />
 
           <Row>
             <Col>

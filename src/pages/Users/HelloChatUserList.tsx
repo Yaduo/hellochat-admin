@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Card, CardBody, CardTitle } from "reactstrap";
 import MetaTags from "react-meta-tags";
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../components/Common/Breadcrumb";
 import axios from "axios";
 import configs from "src/config";
-import Datatable from "../../components/Common/Datatable/Datatable";
+import { Datatable } from "../../components/Common/Datatable/Datatable";
 import { useSelector } from "src/store/hooks";
 import { columns } from "./datatableConfigs";
 import SearchBar from "./SearchBar";
@@ -98,7 +98,7 @@ const HelloChatUserList = () => {
           <title>Data Tables | HelloChat Admin</title>
         </MetaTags>
         <div className="container-fluid">
-          <Breadcrumbs title="Tables" breadcrumbItem="Data Tables" />
+          <Breadcrumb title="Tables" breadcrumbItem="Data Tables" />
           <Row>
             <Col className="col-12">
               <Card>

@@ -17,7 +17,7 @@ import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const FormEditors = () => {
   return (
@@ -27,7 +27,7 @@ const FormEditors = () => {
           <title>Form Editors | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Forms" breadcrumbItem="Form Editors" />
+          <Breadcrumb title="Forms" breadcrumbItem="Form Editors" />
           <Row>
             <Col>
               <Card>

@@ -6,7 +6,7 @@ import { Container, Row } from "reactstrap";
 import ProfileTab from "./ProfileTab";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../../components/Common/Breadcrumb";
 
 const ContactsProfile = () => {
   return (
@@ -17,7 +17,7 @@ const ContactsProfile = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Contacts" breadcrumbItem="Profile" />
+          <Breadcrumb title="Contacts" breadcrumbItem="Profile" />
 
           <Row>
             {/* Render profilemenu */}

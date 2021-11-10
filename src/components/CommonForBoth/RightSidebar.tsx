@@ -28,7 +28,7 @@ import { Link } from "react-router-dom";
 //redux
 import { useSelector, useDispatch } from "react-redux";
 
-const RightSidebar = ({ onClose, onChangeLayoutMode }: any) => {
+export const RightSidebar = ({ onClose, onChangeLayoutMode }: any) => {
   const dispatch = useDispatch();
 
   const {
@@ -416,5 +416,3 @@ const RightSidebar = ({ onClose, onChangeLayoutMode }: any) => {
     </React.Fragment>
   );
 };
-
-export default RightSidebar;

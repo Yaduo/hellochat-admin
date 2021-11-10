@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Container } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../../components/Common/Breadcrumb";
 import BasicPills from "./BasicPills";
 import ProgressbarWizard from "./ProgressbarWizard";
 
@@ -16,7 +16,7 @@ const FormWizard = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Forms" breadcrumbItem="Form Wizard" />
+          <Breadcrumb title="Forms" breadcrumbItem="Form Wizard" />
 
           <div className="row">
             <div className="col-lg-12">

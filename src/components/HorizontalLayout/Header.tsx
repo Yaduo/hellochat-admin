@@ -16,8 +16,8 @@ import { Row, Col, Dropdown, DropdownToggle, DropdownMenu } from "reactstrap";
 import LanguageDropdown from "../CommonForBoth/TopbarDropdown/LanguageDropdown";
 import NotificationDropdown from "../CommonForBoth/TopbarDropdown/NotificationDropdown";
 import ProfileMenu from "../CommonForBoth/TopbarDropdown/ProfileMenu";
-import RightSidebar from "../CommonForBoth/RightSidebar";
-import LightDark from "../CommonForBoth/Menus/LightDark";
+import {RightSidebar} from "../CommonForBoth/RightSidebar";
+import {LightDark} from "../CommonForBoth/Menus/LightDark";
 
 // import images
 import logo from "../../assets/images/logo-sm.svg";

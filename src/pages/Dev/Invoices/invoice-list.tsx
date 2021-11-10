@@ -16,7 +16,7 @@ import {
 } from "reactstrap";
 
 // import { getInvoices as onGetInvoices } from "../../store/actions";
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 import paginationFactory, {
   PaginationListStandalone,
@@ -136,7 +136,7 @@ const InvoiceList = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Invoices" breadcrumbItem="Invoice List" />
+          <Breadcrumb title="Invoices" breadcrumbItem="Invoice List" />
           <Row>
             <Col lg="12">
               <Card>

@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Card, CardBody, CardHeader, Col, Container, Row } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../../components/Common/Breadcrumb";
 import ChoicesInput from "./ChoicesInput";
 import Switcher from "./Switcher";
 
@@ -18,7 +18,7 @@ const AdvancedPlugins = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Forms" breadcrumbItem="Advanced Plugins" />
+          <Breadcrumb title="Forms" breadcrumbItem="Advanced Plugins" />
           <Row>
             <Col lg={12}>
               <Card>

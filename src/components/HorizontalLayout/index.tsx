@@ -15,13 +15,13 @@ import { useSelector, useDispatch } from "react-redux";
 //components
 import Navbar from "./Navbar";
 import Header from "./Header";
-import Footer from "./Footer";
+import {Footer} from "./Footer";
 
 interface LayoutProps {
   children: any;
 }
 
-const Layout = (props: LayoutProps) => {
+export const HorizontalLayout = (props: LayoutProps) => {
   const dispatch = useDispatch();
 
   const {
@@ -147,5 +147,3 @@ call dark/light mode
     </React.Fragment>
   );
 };
-
-export default Layout;

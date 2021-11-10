@@ -11,7 +11,7 @@ interface LightDarkState {
   onChangeLayoutMode: any;
 }
 
-const LightDark = ({ layoutMode, onChangeLayoutMode }: LightDarkState) => {
+export const LightDark = ({ layoutMode, onChangeLayoutMode }: LightDarkState) => {
   const mode =
     layoutMode === layoutTheme["DARKMODE"]
       ? layoutTheme["LIGHTMODE"]
@@ -32,5 +32,3 @@ const LightDark = ({ layoutMode, onChangeLayoutMode }: LightDarkState) => {
     </div>
   );
 };
-
-export default LightDark;

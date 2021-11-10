@@ -4,7 +4,7 @@ import MetaTags from "react-meta-tags";
 import { Row, Col, Card, CardBody, Container, CardHeader } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const IconDripicons = () => {
   return (
@@ -14,7 +14,7 @@ const IconDripicons = () => {
           <title>Dripicons | HelloChat Admin</title>
         </MetaTags>
         <Container fluid>
-          <Breadcrumbs title="Icons" breadcrumbItem="Dripicons" />
+          <Breadcrumb title="Icons" breadcrumbItem="Dripicons" />
 
           <Row>
             <Col xs="12">

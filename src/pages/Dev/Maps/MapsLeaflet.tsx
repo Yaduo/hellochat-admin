@@ -12,7 +12,7 @@ import LayerGroup from "./LeafletMap/LayerGroup";
 import MapLayerControl from "./LeafletMap/MapLayerControl";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 const MapsLeaflet = () => {
   return (
@@ -22,7 +22,7 @@ const MapsLeaflet = () => {
           <title>Leaflet Maps | HelloChat Admin</title>
         </MetaTags>
         <Container fluid>
-          <Breadcrumbs title="Maps" breadcrumbItem="Leaflet Maps" />
+          <Breadcrumb title="Maps" breadcrumbItem="Leaflet Maps" />
           <Row>
             <Col lg="6">
               <Card>

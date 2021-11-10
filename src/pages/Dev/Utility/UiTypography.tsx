@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiTypography = () => {
   return (
@@ -22,7 +22,7 @@ const UiTypography = () => {
           <title>Typography | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Pages" breadcrumbItem="Typography" />
+          <Breadcrumb title="Pages" breadcrumbItem="Typography" />
 
           <Row>
             <Col xl={6}>

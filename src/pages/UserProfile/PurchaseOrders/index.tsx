@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import configs from "src/config";
-import Datatable from "src/components/Common/Datatable/Datatable";
+import { Datatable } from "src/components/Common/Datatable/Datatable";
 import { useSelector } from "src/store/hooks";
 import { columns } from "./datatableConfigs";
 import PaymentTypeDropdown, { PaymentType } from "./PaymentTypeDropdown";

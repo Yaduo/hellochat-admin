@@ -12,7 +12,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiProgressbar = () => {
   return (
@@ -24,7 +24,7 @@ const UiProgressbar = () => {
           </title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Components" breadcrumbItem="Progress Bars" />
+          <Breadcrumb title="Components" breadcrumbItem="Progress Bars" />
 
           <Row>
             <Col xl={6}>

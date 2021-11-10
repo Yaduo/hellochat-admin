@@ -26,7 +26,7 @@ import img4 from "../../../assets/images/small/img-4.jpg";
 import img5 from "../../../assets/images/small/img-5.jpg";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const images: Array<any> = [img4, img5, img1];
 
@@ -45,7 +45,7 @@ const UiLightbox = () => {
           <title>Lightbox | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Extended" breadcrumbItem="Lightbox" />
+          <Breadcrumb title="Extended" breadcrumbItem="Lightbox" />
 
           {isFits ? (
             <Lightbox

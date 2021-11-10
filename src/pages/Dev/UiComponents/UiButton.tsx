@@ -16,7 +16,7 @@ import {
 } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiButton = () => {
   return (
@@ -27,7 +27,7 @@ const UiButton = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Components" breadcrumbItem="Button" />
+          <Breadcrumb title="Components" breadcrumbItem="Button" />
           <Row>
             <Col xl={6}>
               <Card>

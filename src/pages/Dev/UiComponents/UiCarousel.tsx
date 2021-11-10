@@ -19,7 +19,7 @@ import Slidewithcaption from "./CarouselTypes/slidewithcaption";
 import Slidewithfade from "./CarouselTypes/slidewithfade";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiCarousel = () => {
   return (
@@ -29,7 +29,7 @@ const UiCarousel = () => {
           <title>Carousel | HelloChat Admin</title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Components" breadcrumbItem="Carousel" />
+          <Breadcrumb title="Components" breadcrumbItem="Carousel" />
 
           <Row>
             <Col lg={6}>

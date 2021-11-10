@@ -3,7 +3,7 @@ import MetaTags from "react-meta-tags";
 import { Card, CardBody, CardHeader, Col, Container, Row } from "reactstrap";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 //imoprt images
 import img4 from "../../../assets/images/small/img-4.jpg";
@@ -23,7 +23,7 @@ const UiImages = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Components" breadcrumbItem="Images" />
+          <Breadcrumb title="Components" breadcrumbItem="Images" />
           <Row>
             <Col xl={6}>
               <Card>

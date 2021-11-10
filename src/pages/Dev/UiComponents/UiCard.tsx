@@ -13,7 +13,7 @@ import img7 from "../../../assets/images/small/img-7.jpg";
 import img6 from "../../../assets/images/small/img-6.jpg";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import { Breadcrumb } from "../../../components/Common/Breadcrumb";
 
 const UiCard = () => {
   return (
@@ -24,7 +24,7 @@ const UiCard = () => {
         </MetaTags>
         <Container fluid>
           {/* Render Breadcrumbs */}
-          <Breadcrumbs title="Components" breadcrumbItem="Cards" />
+          <Breadcrumb title="Components" breadcrumbItem="Cards" />
           <Row>
             <Col md={6} xl={3}>
               <Card>

@@ -13,7 +13,7 @@ import {
 import Dropzone from "react-dropzone";
 
 // Breadcrumb
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+import {Breadcrumb} from "../../../components/Common/Breadcrumb";
 
 import { Link } from "react-router-dom";
 
@@ -52,7 +52,7 @@ const FormUpload = () => {
           </title>
         </MetaTags>
         <Container fluid={true}>
-          <Breadcrumbs title="Forms" breadcrumbItem="Form File Upload" />
+          <Breadcrumb title="Forms" breadcrumbItem="Form File Upload" />
 
           <Row>
             <Col className="col-12">

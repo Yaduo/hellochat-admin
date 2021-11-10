@@ -9,11 +9,11 @@ import "react-drawer/lib/react-drawer.css";
 import Icon from "@ailibs/feather-react-ts";
 
 //import component
-import RightSidebar from "../CommonForBoth/RightSidebar";
+import {RightSidebar} from "../CommonForBoth/RightSidebar";
 import NotificationDropdown from "../CommonForBoth/TopbarDropdown/NotificationDropdown";
 import ProfileMenu from "../CommonForBoth/TopbarDropdown/ProfileMenu";
 import LanguageDropdown from "../CommonForBoth/TopbarDropdown/LanguageDropdown";
-import LightDark from "../CommonForBoth/Menus/LightDark";
+import {LightDark} from "../CommonForBoth/Menus/LightDark";
 
 // Reactstrap
 import { Dropdown, DropdownToggle, DropdownMenu, Row, Col } from "reactstrap";
